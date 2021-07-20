@@ -1,0 +1,117 @@
+section.organization {
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 1200px) {
+  section.organization {
+    margin-bottom: 150px;
+  }
+}
+
+.organization h2 {
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 1200px) {
+  .organization h2 {
+    margin-bottom: 74px;
+  }
+}
+
+.organization__items {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .organization__items {
+    flex-direction: row;
+  }
+}
+
+.organization__item {
+  width: 74%;
+  max-width: 280px;
+  position: relative;
+}
+.organization__item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.organization__item .text {
+  position: absolute;
+  left: 0;
+  bottom: 27px;
+  font-size: 12px;
+  padding: 7.5px;
+  line-height: 18px;
+  background: #fff;
+}
+@media only screen and (min-width: 992px) {
+  .organization__item .text {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .organization__item .text {
+    font-size: 22px;
+    line-height: 150%;
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .organization__item {
+    max-width: 408px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .organization__item {
+    max-width: 564px;
+  }
+}
+
+.place-left {
+  margin-bottom: 20px;
+}
+.place-left .text {
+  margin-right: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .place-left {
+    margin-bottom: 134px;
+  }
+  .place-left .text {
+    bottom: 69px;
+    margin-right: 127px;
+  }
+}
+
+.place-right {
+  margin-left: auto;
+}
+.place-right .text {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  margin-left: 53px;
+  margin-right: 0;
+}
+@media only screen and (min-width: 992px) {
+  .place-right .text {
+    margin-left: 188px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .place-right {
+    margin-top: 134px;
+  }
+  .place-right .text {
+    bottom: 32px;
+    margin-left: 144px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .place-right .text {
+    margin-left: 188px;
+  }
+}

@@ -1,0 +1,96 @@
+.scroller {
+  display: grid;
+  grid-auto-columns: minmax(220px, auto);
+  grid-gap: 20px;
+  grid-auto-flow: column;
+}
+.scroller.row {
+  margin: 0;
+  overflow-x: auto;
+}
+.scroller::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+@media only screen and (min-width: 768px) {
+  .scroller {
+    grid-gap: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .scroller {
+    display: block;
+  }
+}
+
+section.situation {
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 1200px) {
+  section.situation {
+    margin-bottom: 150px;
+  }
+}
+
+.situation h2 {
+  margin-bottom: 28px;
+}
+@media only screen and (min-width: 1200px) {
+  .situation h2 {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .situation__items {
+    display: flex;
+    height: 453px;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .place-middle {
+    top: 39px;
+  }
+
+  .place-bottom {
+    top: 149px;
+  }
+}
+.situation__item {
+  position: relative;
+  width: 220px;
+}
+@media only screen and (min-width: 1200px) {
+  .situation__item {
+    width: 260px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+.situation__item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.situation__item .text {
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+}
+.situation__item .text .title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  padding: 6px;
+  background: #FFF;
+}
+.situation__item .text .description {
+  font-size: 14px;
+  line-height: 150%;
+  padding: 2px 6px;
+  background: #FFF;
+  margin-right: 24px;
+}
