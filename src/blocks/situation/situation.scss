@@ -43,9 +43,8 @@ section.situation {
   @include xl() {
     display: flex;
     height: 453px;
+    justify-content: space-between;
   }
-  // display: flex;
-  // flex-direction: column;
 }
 
   @include xl() {
