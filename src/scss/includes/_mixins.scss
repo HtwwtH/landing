@@ -1,0 +1,17 @@
+@use "sass:math";
+
+@function calculateRem($size) {
+    $remSize: math.div($size, $fontSize);
+    @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+    font-size: $size; //Fallback in px
+    font-size: calculateRem($size);
+}
+
+@mixin columns($number, $gap) {
+    display: grid;
+    grid-template-columns: repeat($number, 1fr);
+    grid-column-gap: calculateRem($gap);
+}

@@ -1,0 +1,260 @@
+.btn {
+  display: inline-flex;
+  vertical-align: top;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 24px;
+  transition: 0.3s color ease, 0.3s background-color ease;
+  height: 48px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: 0;
+  margin: 0;
+  text-align: center;
+  border: 0;
+  font-family: $fontInter;
+  font-weight: normal;
+  white-space: nowrap;
+
+  &:disabled,
+  &.disabled {
+    cursor: default;
+  }
+
+  &--shadow {
+    box-shadow: 0px 28px 25px rgba(0, 0, 0, 0.09),
+      0px 4px 6px rgba(0, 0, 0, 0.04);
+  }
+
+  &--icon-right {
+    .icon {
+      margin-left: 8px;
+    }
+  }
+
+  &--icon-left {
+    .icon {
+      margin-right: 8px;
+    }
+  }
+
+  &--box {
+    width: 48px;
+  }
+
+  &--large {
+    height: 56px;
+    padding: 0 30px;
+    font-size: 18px;
+
+    &.btn--box {
+      width: 56px;
+    }
+  }
+
+  &--small {
+    height: 40px;
+    font-size: 13px;
+    padding: 0 12px;
+
+    &.btn--box {
+      width: 40px;
+    }
+  }
+
+  &--mini {
+    height: 32px;
+    font-size: 13px;
+    padding: 0 12px;
+
+    &.btn--box {
+      width: 32px;
+    }
+  }
+
+  &--box {
+    padding: 0;
+  }
+
+  &--red {
+    color: #fff;
+    background: $colorRedLigth;
+
+    &:hover {
+      background: $colorRed;
+    }
+
+    &:disabled,
+    &.disabled {
+      background: $colorRedLigth-2;
+    }
+  }
+
+  &--gray {
+    color: $colorDark;
+    background: $colorGrayLigth-3;
+
+    &:hover {
+      background: $colorGrayLigth-2;
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $colorGray;
+      background: $colorGrayLigth-3;
+    }
+  }
+}
+
+.btn-r {
+  display: inline-flex;
+  vertical-align: top;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 24px;
+  transition: 0.3s color ease, 0.3s background-color ease,
+    0.3s border-color ease;
+  height: 48px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: 0;
+  margin: 0;
+  text-align: center;
+  border: 1px solid;
+  font-family: $fontInter;
+  white-space: nowrap;
+  font-weight: normal;
+
+  &:disabled,
+  &.disabled {
+    cursor: default;
+  }
+
+  &--icon-right {
+    .icon {
+      margin-left: 8px;
+    }
+  }
+
+  &--icon-left {
+    .icon {
+      margin-right: 8px;
+    }
+  }
+
+  &--box {
+    width: 48px;
+  }
+
+  &--large {
+    height: 56px;
+    padding: 0 30px;
+    font-size: 18px;
+
+    &.btn-r--box {
+      width: 56px;
+    }
+  }
+
+  &--small {
+    height: 40px;
+    font-size: 13px;
+    padding: 0 12px;
+
+    &.btn-r--box {
+      width: 40px;
+    }
+  }
+
+  &--mini {
+    height: 32px;
+    font-size: 13px;
+    padding: 0 12px;
+
+    &.btn-r--box {
+      width: 32px;
+    }
+  }
+
+  &--micro {
+    height: 28px;
+    font-size: 12px;
+    padding: 0 10px;
+
+    &.btn-r--box {
+      width: 28px;
+    }
+  }
+
+  &--box {
+    padding: 0;
+  }
+
+  &--red {
+    color: $colorRedLigth;
+    border-color: $colorRedLigth;
+
+    &:hover {
+      color: $colorRed;
+      border-color: $colorRed;
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $colorRedLigth-2;
+      border-color: $colorRedLigth-2;
+    }
+  }
+
+  &--gray {
+    color: $colorDark;
+    border-color: $colorGrayLigth;
+
+    &:hover {
+      border-color: colorGray;
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $colorGray;
+      border-color: $colorGrayLigth;
+    }
+  }
+}
+
+.badge {
+  display: inline-block;
+  vertical-align: top;
+  height: 18px;
+  line-height: 19px;
+  padding: 0 5px;
+  border-radius: 18px;
+  min-width: 18px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 11px;
+  color: #fff;
+  background: $colorGray;
+
+  &--red {
+    background: $colorRedLigth;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+
+  .btn,
+  .btn-r {
+    margin-bottom: 10px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

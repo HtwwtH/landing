@@ -1,0 +1,19 @@
+@use "sass:math";
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+
+$container-padding-x: 16px !default;
+
+$screen-sm: 767px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$grid-breakpoints: (xs: 0, sm: $screen-sm, md: $screen-md, lg: $screen-lg, xl: $screen-xl) !default;
+
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1312px) !default;
+
+@import "breakpoints";
+@import "grid";
+@import "grid-framework";

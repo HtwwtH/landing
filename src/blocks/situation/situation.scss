@@ -1,0 +1,96 @@
+@import "../../scss/includes/variables";
+@import "../../scss/includes/helpers";
+
+.scroller {
+  display: grid;
+  grid-auto-columns: minmax(220px, auto);
+  grid-gap: 20px;
+  grid-auto-flow: column;
+
+    &.row {
+      margin: 0;
+      overflow-x: auto;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+  @include md() {
+    grid-gap: 40px;
+  }
+  @include xl() {
+    display: block;
+  }
+}
+
+section.situation {
+  margin-bottom: 60px;
+  @include xl() {
+    margin-bottom: 150px;
+  }
+}
+
+.situation h2 {
+  margin-bottom: 28px;
+  @include xl() {
+    margin-bottom: 80px;
+  }
+}
+
+.situation__items {
+  @include xl() {
+    display: flex;
+    height: 453px;
+  }
+  // display: flex;
+  // flex-direction: column;
+}
+
+  @include xl() {
+    .place-middle {
+      top: 39px;
+    }
+    .place-bottom {
+      top: 149px;
+    }
+  }
+
+
+.situation__item {
+  position: relative;
+  width: 220px;
+
+  @include xl() {
+    width: 260px;
+    height: fit-content;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .text {
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+
+    .title {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: bold;
+      padding: 6px;
+      background: #FFF;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 150%;
+      padding: 2px 6px;
+      background: #FFF;
+      margin-right: 24px;
+    }
+  }
+}

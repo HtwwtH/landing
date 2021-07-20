@@ -1,0 +1,177 @@
+@import "../../scss/includes/variables";
+@import "../../scss/includes/helpers";
+
+.brand {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.brand h2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.brand p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.brand .caption__title {
+  margin-bottom: 16px;
+  max-width: 366px;
+}
+
+.brand .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand .tape2 {
+  display: block;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 77px;
+  right: -30px;
+  max-width: 142px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.brand {
+  .cup-mini {
+    display: block;
+    height: auto;
+    max-width: 266px;
+    position: relative;
+    left: -41px;
+    margin-bottom: 47px;
+  }
+  .cup {
+    display: none;
+  }
+}
+
+.brand .inner {
+    max-width: 573px;
+}
+
+
+
+@include sm() {
+  .brand h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .brand p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .brand {
+    .cup-mini {
+      display: none;
+    }
+    .cup {
+      width: 50%;
+      max-width: 320px;
+      display: block;
+      height: auto;
+      margin-bottom: 47px;
+      margin-left: 16%;
+    }
+  }
+  .brand .tape2 {
+    top: 0;
+    right: 0;
+    max-width: 172px;
+  }
+
+  .brand .inner {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .brand .caption__title {
+    margin: 0 auto 16px;
+  }
+}
+
+@include md() {
+  .brand {
+    position: relative;
+    margin-bottom: 90px;
+  }
+}
+
+@include lg() {
+  .brand {
+    margin-bottom: 120px;
+  }
+  .brand .inner {
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+  }
+  .brand .cup {
+    max-width: 551px;
+    display: block;
+    height: auto;
+  }
+  .brand .tape2 {
+    max-width: 252px;
+  }
+}
+
+@include xl() {
+  .brand {
+    margin-bottom: 270px;
+  }
+
+  .brand h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .brand p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .brand .tape2 {
+    width: 35%;
+    bottom: 10%;
+    right: 0;
+    max-width: 292px;
+  }
+
+  .brand .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: -10%;
+  }
+
+  .brand .inner {
+    margin: 0;
+    padding-left: 53px;
+    text-align: left;
+  }
+
+  .brand .caption__title {
+    margin: 0 0 24px;
+  }
+
+  .brand .cup {
+    margin-left: 0;
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
+

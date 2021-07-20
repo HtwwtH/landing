@@ -1,0 +1,43 @@
+{
+  "name": "sklad-markup",
+  "version": "0.1",
+  "description": "Markup for sklad.ru design",
+  "main": "index.js",
+  "repository": "git@gitlab.com:hmns/skladru-markup.git",
+  "author": "Dmitry Galakhov <madex@yandex.ru>",
+  "license": "MIT",
+  "private": true,
+  "browserslist": "> 0.25%, not dead",
+  "scripts": {
+    "start": "gulp",
+    "build": "NODE_ENV=production gulp build"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "lightcase": "^2.5.0",
+    "select2": "^4.1.0-rc.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@prettier/plugin-pug": "^1.16.0",
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.27.4",
+    "concat": "^1.0.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^4.0.0",
+    "gulp-include": "^2.4.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.3.5",
+    "postcss-inline-svg": "^5.0.0",
+    "prettier": "^2.3.2",
+    "sass": "^1.35.2"
+  }
+}
