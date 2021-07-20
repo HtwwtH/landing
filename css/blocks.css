@@ -235,6 +235,7 @@ section.format {
   .tabs-list__link {
     padding: 36px 12px 34px;
     max-width: 150px;
+    height: 100%;
     text-align: center;
   }
 }
