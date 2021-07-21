@@ -2,11 +2,11 @@
   display: inline-flex;
   vertical-align: top;
   text-decoration: none;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 24px;  
   transition: 0.3s color ease, 0.3s background-color ease;
   height: 48px;
-  padding: 0 24px;
+  padding: 0 46px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -14,9 +14,13 @@
   margin: 0;
   text-align: center;
   border: 0;
-  font-family: $fontInter;
-  font-weight: normal;
+  font-weight: 600;
   white-space: nowrap;
+  width: 100%;
+
+  @include sm() {
+    width: unset;
+  }
 
   &:disabled,
   &.disabled {
@@ -80,32 +84,22 @@
 
   &--red {
     color: #fff;
-    background: $colorRedLigth;
+    background: $red;
 
     &:hover {
-      background: $colorRed;
+      background: $redLight;
+    }
+
+    &:active {
+      background: $redDark;
     }
 
     &:disabled,
     &.disabled {
-      background: $colorRedLigth-2;
+      background: $lightGray;
     }
   }
 
-  &--gray {
-    color: $colorDark;
-    background: $colorGrayLigth-3;
-
-    &:hover {
-      background: $colorGrayLigth-2;
-    }
-
-    &:disabled,
-    &.disabled {
-      color: $colorGray;
-      background: $colorGrayLigth-3;
-    }
-  }
 }
 
 .btn-r {
@@ -125,9 +119,8 @@
   margin: 0;
   text-align: center;
   border: 1px solid;
-  font-family: $fontInter;
   white-space: nowrap;
-  font-weight: normal;
+  font-weight: 600;
 
   &:disabled,
   &.disabled {
@@ -195,54 +188,26 @@
   }
 
   &--red {
-    color: $colorRedLigth;
-    border-color: $colorRedLigth;
+    color: $red;
+    border-color: $red;
 
     &:hover {
-      color: $colorRed;
-      border-color: $colorRed;
+      color: $redLight;
+      border-color: $redLight;
+    }
+
+    &:active {
+      color: $redDark;
+      border-color: $redDark;
     }
 
     &:disabled,
     &.disabled {
-      color: $colorRedLigth-2;
-      border-color: $colorRedLigth-2;
+      color: $lightGray;
+      border-color: $lightGray;
     }
   }
 
-  &--gray {
-    color: $colorDark;
-    border-color: $colorGrayLigth;
-
-    &:hover {
-      border-color: colorGray;
-    }
-
-    &:disabled,
-    &.disabled {
-      color: $colorGray;
-      border-color: $colorGrayLigth;
-    }
-  }
-}
-
-.badge {
-  display: inline-block;
-  vertical-align: top;
-  height: 18px;
-  line-height: 19px;
-  padding: 0 5px;
-  border-radius: 18px;
-  min-width: 18px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 11px;
-  color: #fff;
-  background: $colorGray;
-
-  &--red {
-    background: $colorRedLigth;
-  }
 }
 
 .btn-group {
