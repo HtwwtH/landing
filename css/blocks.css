@@ -208,12 +208,19 @@ section.collections {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 16px;
+  margin: 0 auto 30px;
 }
 @media only screen and (min-width: 576px) {
   .collections__grid {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .collections__grid {
+    grid-row-gap: 40px;
+    grid-column-gap: 34.55px;
+    margin-bottom: 35px;
   }
 }
 
@@ -230,7 +237,7 @@ section.collections {
 @media only screen and (min-width: 1200px) {
   .collection__card {
     max-width: 400px;
-    padding: 35px 40px;
+    padding: 35px 40px 27px;
   }
 }
 .collection__card .image {
@@ -532,10 +539,28 @@ section.organization {
     margin-left: 188px;
   }
 }
+section.reliability {
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 1200px) {
+  section.reliability {
+    margin-bottom: 150px;
+  }
+}
+
+.reliability h2 {
+  margin-bottom: 28px;
+}
+@media only screen and (min-width: 1200px) {
+  .reliability h2 {
+    margin-bottom: 45.26px;
+  }
+}
+
 .scroller {
   display: grid;
-  grid-auto-columns: minmax(220px, auto);
-  grid-gap: 20px;
+  grid-auto-columns: minmax(200px, auto);
+  grid-gap: 28px;
   grid-auto-flow: column;
 }
 .scroller.row {
@@ -546,17 +571,33 @@ section.organization {
   width: 0;
   height: 0;
 }
-@media only screen and (min-width: 768px) {
-  .scroller {
-    grid-gap: 40px;
-  }
-}
 @media only screen and (min-width: 1200px) {
   .scroller {
     display: block;
   }
 }
 
+.reliability__item {
+  width: 200px;
+}
+.reliability__item .image {
+  margin-bottom: 20px;
+}
+.reliability__item .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reliability__item .text .title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 7px;
+}
+.reliability__item .text .description {
+  font-size: 14px;
+  line-height: 150%;
+}
 section.situation {
   margin-bottom: 60px;
 }
@@ -672,11 +713,9 @@ section.youtube {
   position: absolute;
 }
 .youtube__decor.top-left {
-  max-width: 91px;
-  -webkit-transform: rotate(14deg);
-          transform: rotate(14deg);
-  left: -65px;
-  bottom: 195px;
+  max-width: 103px;
+  left: -71px;
+  bottom: 185px;
 }
 @media only screen and (min-width: 576px) {
   .youtube__decor.top-left {
@@ -687,42 +726,38 @@ section.youtube {
 }
 @media only screen and (min-width: 768px) {
   .youtube__decor.top-left {
-    max-width: 189px;
+    max-width: 219px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .youtube__decor.top-left {
-    max-width: 299px;
-    left: -142px;
-    bottom: 432px;
+    max-width: 346px;
+    left: -163px;
+    bottom: 399px;
   }
 }
 .youtube__decor.bottom-left {
-  max-width: 152px;
-  -webkit-transform: rotate(-21deg);
-          transform: rotate(-21deg);
-  left: -83px;
-  bottom: 31px;
+  max-width: 183px;
+  left: -97px;
+  bottom: 6px;
 }
 @media only screen and (min-width: 768px) {
   .youtube__decor.bottom-left {
-    max-width: 239px;
+    max-width: 269px;
     bottom: -50px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .youtube__decor.bottom-left {
-    max-width: 499px;
-    left: -180px;
-    bottom: -108px;
+    max-width: 527px;
+    left: -225px;
+    bottom: -187px;
   }
 }
 .youtube__decor.top-right {
-  max-width: 91px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  right: -63px;
-  bottom: 195px;
+  max-width: 106px;
+  right: -72px;
+  bottom: 171px;
 }
 @media only screen and (min-width: 576px) {
   .youtube__decor.top-right {
@@ -733,22 +768,20 @@ section.youtube {
 }
 @media only screen and (min-width: 768px) {
   .youtube__decor.top-right {
-    max-width: 189px;
+    max-width: 219px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .youtube__decor.top-right {
-    max-width: 299px;
-    right: -139px;
-    bottom: 542px;
+    max-width: 341px;
+    right: -166px;
+    bottom: 460px;
   }
 }
 .youtube__decor.bottom-right {
-  max-width: 136px;
-  -webkit-transform: rotate(26deg);
-          transform: rotate(26deg);
-  right: -99.5px;
-  bottom: 43px;
+  max-width: 163px;
+  right: -113px;
+  bottom: 17px;
 }
 @media only screen and (min-width: 576px) {
   .youtube__decor.bottom-right {
@@ -759,16 +792,16 @@ section.youtube {
 }
 @media only screen and (min-width: 768px) {
   .youtube__decor.bottom-right {
-    max-width: 246px;
+    max-width: 286px;
     right: -122.5px;
     bottom: -50px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .youtube__decor.bottom-right {
-    max-width: 446px;
-    right: -172.5px;
-    bottom: 23.5px;
+    max-width: 536px;
+    right: -216px;
+    bottom: -60px;
   }
 }
 
