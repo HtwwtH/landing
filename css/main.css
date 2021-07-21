@@ -53,6 +53,11 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #22262F;
+}
+
 .col-xl,
 .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg,
 .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
@@ -669,4 +674,181 @@ body {
 }
 .text-center {
   text-align: center;
+}
+
+.btn {
+  display: inline-flex;
+  vertical-align: top;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  transition: 0.3s color ease, 0.3s background-color ease;
+  height: 48px;
+  padding: 0 46px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: 0;
+  margin: 0;
+  text-align: center;
+  border: 0;
+  font-weight: 600;
+  white-space: nowrap;
+  width: 100%;
+}
+@media only screen and (min-width: 576px) {
+  .btn {
+    width: unset;
+  }
+}
+.btn:disabled, .btn.disabled {
+  cursor: default;
+}
+.btn--shadow {
+  box-shadow: 0px 28px 25px rgba(0, 0, 0, 0.09), 0px 4px 6px rgba(0, 0, 0, 0.04);
+}
+.btn--icon-right .icon {
+  margin-left: 8px;
+}
+.btn--icon-left .icon {
+  margin-right: 8px;
+}
+.btn--box {
+  width: 48px;
+}
+.btn--large {
+  height: 56px;
+  padding: 0 30px;
+  font-size: 18px;
+}
+.btn--large.btn--box {
+  width: 56px;
+}
+.btn--small {
+  height: 40px;
+  font-size: 13px;
+  padding: 0 12px;
+}
+.btn--small.btn--box {
+  width: 40px;
+}
+.btn--mini {
+  height: 32px;
+  font-size: 13px;
+  padding: 0 12px;
+}
+.btn--mini.btn--box {
+  width: 32px;
+}
+.btn--box {
+  padding: 0;
+}
+.btn--red {
+  color: #fff;
+  background: #E91C2E;
+}
+.btn--red:hover {
+  background: #FF0015;
+}
+.btn--red:active {
+  background: #D11222;
+}
+.btn--red:disabled, .btn--red.disabled {
+  background: rgba(34, 38, 47, 0.1);
+}
+
+.btn-r {
+  display: inline-flex;
+  vertical-align: top;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 24px;
+  transition: 0.3s color ease, 0.3s background-color ease, 0.3s border-color ease;
+  height: 48px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: 0;
+  margin: 0;
+  text-align: center;
+  border: 1px solid;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.btn-r:disabled, .btn-r.disabled {
+  cursor: default;
+}
+.btn-r--icon-right .icon {
+  margin-left: 8px;
+}
+.btn-r--icon-left .icon {
+  margin-right: 8px;
+}
+.btn-r--box {
+  width: 48px;
+}
+.btn-r--large {
+  height: 56px;
+  padding: 0 30px;
+  font-size: 18px;
+}
+.btn-r--large.btn-r--box {
+  width: 56px;
+}
+.btn-r--small {
+  height: 40px;
+  font-size: 13px;
+  padding: 0 12px;
+}
+.btn-r--small.btn-r--box {
+  width: 40px;
+}
+.btn-r--mini {
+  height: 32px;
+  font-size: 13px;
+  padding: 0 12px;
+}
+.btn-r--mini.btn-r--box {
+  width: 32px;
+}
+.btn-r--micro {
+  height: 28px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+.btn-r--micro.btn-r--box {
+  width: 28px;
+}
+.btn-r--box {
+  padding: 0;
+}
+.btn-r--red {
+  color: #E91C2E;
+  border-color: #E91C2E;
+}
+.btn-r--red:hover {
+  color: #FF0015;
+  border-color: #FF0015;
+}
+.btn-r--red:active {
+  color: #D11222;
+  border-color: #D11222;
+}
+.btn-r--red:disabled, .btn-r--red.disabled {
+  color: rgba(34, 38, 47, 0.1);
+  border-color: rgba(34, 38, 47, 0.1);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn-group .btn,
+.btn-group .btn-r {
+  margin-bottom: 10px;
+}
+.btn-group .btn:not(:last-child),
+.btn-group .btn-r:not(:last-child) {
+  margin-right: 10px;
 }
