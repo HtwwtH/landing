@@ -1,0 +1,64 @@
+@import "../../scss/includes/variables";
+@import "../../scss/includes/helpers";
+
+section.reliability {
+  margin-bottom: 60px;
+  @include xl() {
+    margin-bottom: 150px;
+  }
+}
+
+.reliability h2 {
+  margin-bottom: 28px;
+  @include xl() {
+    margin-bottom: 45.26px;
+  }
+}
+
+.scroller {
+  display: grid;
+  grid-auto-columns: minmax(200px, auto);
+  grid-gap: 28px;
+  grid-auto-flow: column;
+
+    &.row {
+      margin: 0;
+      overflow-x: auto;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+  @include xl() {
+    display: block;
+  }
+}
+
+.reliability__item {
+  width: 200px;
+
+  .image {
+    margin-bottom: 20px;
+
+     img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .text {
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 7px;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 150%;
+    }
+  }
+ 
+}

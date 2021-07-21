@@ -28,10 +28,9 @@ section.youtube {
   position: absolute;
 
   &.top-left {
-    max-width: 91px;
-    transform: rotate(14deg);
-    left: -65px;
-    bottom: 195px;
+    max-width: 103px;
+    left: -71px;
+    bottom: 185px;
 
     @include sm() {
       max-width: 139px;
@@ -40,37 +39,35 @@ section.youtube {
     }
 
     @include md() {
-      max-width: 189px;
+      max-width: 219px;
     }
 
     @include xl() {
-      max-width: 299px;
-      left: -142px;
-      bottom: 432px;
+      max-width: 346px;
+      left: -163px;
+      bottom: 399px;
     }
   }
   &.bottom-left {
-    max-width: 152px;
-    transform: rotate(-21deg);
-    left: -83px;
-    bottom: 31px;
+    max-width: 183px;
+    left: -97px;
+    bottom: 6px;
 
     @include md() {
-      max-width: 239px;
+      max-width: 269px;
       bottom: -50px
     }
 
     @include xl() {
-      max-width: 499px;
-      left: -180px;
-      bottom: -108px;
+      max-width: 527px;
+      left: -225px;
+      bottom: -187px;
     }
   }
   &.top-right {
-    max-width: 91px;
-    transform: rotate(-45deg);
-    right: -63px;
-    bottom: 195px;
+    max-width: 106px;
+    right: -72px;
+    bottom: 171px;
     
     @include sm() {
       max-width: 139px;
@@ -79,20 +76,19 @@ section.youtube {
     }
 
     @include md() {
-      max-width: 189px;
+      max-width: 219px;
     }
 
     @include xl() {
-      max-width: 299px;
-      right: -139px;
-      bottom: 542px;
+      max-width: 341px;
+      right: -166px;
+      bottom: 460px;
     }
   }
   &.bottom-right {
-    max-width: 136px;
-    transform: rotate(26deg);
-    right: -99.5px;
-    bottom: 43px;
+    max-width: 163px;
+    right: -113px;
+    bottom: 17px;
 
     @include sm() {
       max-width: 186px;
@@ -101,15 +97,15 @@ section.youtube {
     }
 
     @include md() {
-      max-width: 246px;
+      max-width: 286px;
       right: -122.5px;
       bottom: -50px;
     }
 
     @include xl() {
-      max-width: 446px;
-      right: -172.5px;
-      bottom: 23.5px;
+      max-width: 536px;
+      right: -216px;
+      bottom: -60px;
     }
   }
 

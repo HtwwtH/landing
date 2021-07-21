@@ -22,11 +22,16 @@ section.collections {
   grid-row-gap: 20px;
   grid-column-gap: 12px;
   width: fit-content;
-  margin: 0 auto 16px;
+  margin: 0 auto 30px;
 
   @include sm() {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
+  }
+  @include xl() {
+    grid-row-gap: 40px;
+    grid-column-gap: 34.55px;
+    margin-bottom: 35px;
   }
 }
 
@@ -42,7 +47,7 @@ section.collections {
   }
   @include xl() {
     max-width: 400px;
-    padding: 35px 40px;
+    padding: 35px 40px 27px;
   }
 
   .image {

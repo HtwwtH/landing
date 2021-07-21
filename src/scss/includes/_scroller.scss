@@ -1,0 +1,24 @@
+
+.scroller {
+  display: grid;
+  grid-auto-columns: minmax(220px, auto);
+  grid-gap: 20px;
+  grid-auto-flow: column;
+
+    &.row {
+      margin: 0;
+      overflow-x: auto;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+  @include md() {
+    grid-gap: 40px;
+  }
+  @include xl() {
+    display: block;
+  }
+}
