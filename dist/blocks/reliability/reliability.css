@@ -16,31 +16,37 @@ section.reliability {
   }
 }
 
-.scroller {
+.reliability.scroller {
   display: grid;
-  grid-auto-columns: minmax(200px, auto);
+  grid-template-columns: 200px 200px 208px 227px;
   grid-gap: 28px;
   grid-auto-flow: column;
 }
-.scroller.row {
+.reliability.scroller.row {
   margin: 0;
   overflow-x: auto;
 }
-.scroller::-webkit-scrollbar {
+.reliability.scroller::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
+@media only screen and (min-width: 768px) {
+  .reliability.scroller {
+    grid-gap: 20px;
+  }
+}
 @media only screen and (min-width: 1200px) {
-  .scroller {
+  .reliability.scroller {
     display: block;
   }
 }
 
 .reliability__item {
-  width: 200px;
+  width: 100%;
 }
 .reliability__item .image {
   margin-bottom: 20px;
+  max-width: 200px;
 }
 .reliability__item .image img {
   width: 100%;

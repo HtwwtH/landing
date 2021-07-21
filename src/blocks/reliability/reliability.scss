@@ -15,9 +15,9 @@ section.reliability {
   }
 }
 
-.scroller {
+.reliability.scroller {
   display: grid;
-  grid-auto-columns: minmax(200px, auto);
+  grid-template-columns: 200px 200px 208px 227px;
   grid-gap: 28px;
   grid-auto-flow: column;
 
@@ -31,16 +31,21 @@ section.reliability {
       height: 0;
     }
 
+  @include md() {
+    grid-gap: 20px;
+  }
+
   @include xl() {
     display: block;
   }
 }
 
 .reliability__item {
-  width: 200px;
+  width: 100%;
 
   .image {
     margin-bottom: 20px;
+    max-width: 200px;
 
      img {
       width: 100%;
