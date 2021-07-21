@@ -1,4 +1,6 @@
 $(function () {
+  console.log('sdfsdf');
+  $('.ytp-large-play-button-bg').attr('fill', '#fff');
 
   $('a[data-rel^=lightcase]').lightcase();
 

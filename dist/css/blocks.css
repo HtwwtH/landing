@@ -64,6 +64,7 @@ section.brand {
 @media only screen and (min-width: 1200px) {
   .brand .caption__title {
     margin: 0 0 24px;
+    text-align: left;
   }
 }
 
@@ -527,10 +528,217 @@ section.situation {
   padding: 6px;
   background: #FFF;
 }
+@media only screen and (min-width: 1200px) {
+  .situation__item .text .title {
+    padding: 10px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .situation__item .text .description {
   font-size: 14px;
   line-height: 150%;
   padding: 2px 6px;
   background: #FFF;
   margin-right: 24px;
+}
+@media only screen and (min-width: 1200px) {
+  .situation__item .text .description {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+section.youtube {
+  background: #ECF4FF;
+  padding-top: 29px;
+  padding-bottom: 66px;
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (min-width: 1200px) {
+  section.youtube {
+    padding-top: 80px;
+    margin-bottom: 150px;
+    padding-bottom: 112px;
+  }
+}
+
+.youtube h2 {
+  margin-bottom: 26px;
+}
+@media only screen and (min-width: 1200px) {
+  .youtube h2 {
+    margin-bottom: 78px;
+  }
+}
+
+.youtube__decor {
+  z-index: 1;
+  position: absolute;
+}
+.youtube__decor.top-left {
+  max-width: 91px;
+  -webkit-transform: rotate(14deg);
+          transform: rotate(14deg);
+  left: -65px;
+  bottom: 195px;
+}
+@media only screen and (min-width: 576px) {
+  .youtube__decor.top-left {
+    max-width: 139px;
+    left: -80px;
+    bottom: 232px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .youtube__decor.top-left {
+    max-width: 189px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .youtube__decor.top-left {
+    max-width: 299px;
+    left: -142px;
+    bottom: 432px;
+  }
+}
+.youtube__decor.bottom-left {
+  max-width: 152px;
+  -webkit-transform: rotate(-21deg);
+          transform: rotate(-21deg);
+  left: -83px;
+  bottom: 31px;
+}
+@media only screen and (min-width: 768px) {
+  .youtube__decor.bottom-left {
+    max-width: 239px;
+    bottom: -50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .youtube__decor.bottom-left {
+    max-width: 499px;
+    left: -180px;
+    bottom: -108px;
+  }
+}
+.youtube__decor.top-right {
+  max-width: 91px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: -63px;
+  bottom: 195px;
+}
+@media only screen and (min-width: 576px) {
+  .youtube__decor.top-right {
+    max-width: 139px;
+    right: -79px;
+    bottom: 242px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .youtube__decor.top-right {
+    max-width: 189px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .youtube__decor.top-right {
+    max-width: 299px;
+    right: -139px;
+    bottom: 542px;
+  }
+}
+.youtube__decor.bottom-right {
+  max-width: 136px;
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+  right: -99.5px;
+  bottom: 43px;
+}
+@media only screen and (min-width: 576px) {
+  .youtube__decor.bottom-right {
+    max-width: 186px;
+    right: -122.5px;
+    bottom: 23.5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .youtube__decor.bottom-right {
+    max-width: 246px;
+    right: -122.5px;
+    bottom: -50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .youtube__decor.bottom-right {
+    max-width: 446px;
+    right: -172.5px;
+    bottom: 23.5px;
+  }
+}
+
+.convert__block {
+  padding-top: 20px;
+}
+
+.convert {
+  position: relative;
+  width: 100%;
+  max-width: 428px;
+  padding: 0 19px;
+  margin: 0 auto;
+  z-index: 2;
+}
+@media only screen and (min-width: 1200px) {
+  .convert {
+    max-width: 800px;
+  }
+}
+
+.convert__video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  padding: 5% 9% 6% 9.5%;
+}
+@media only screen and (min-width: 1200px) {
+  .convert__video {
+    padding: 38px 41px 36px 43px;
+  }
+}
+
+.convert__frame {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.ytp-large-play-button-bg {
+  fill: red;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 379px) {
+  .convert__video {
+    padding: 5% 8.5% 6% 8.5%;
+  }
+}
+@media only screen and (min-width: 380px) and (max-width: 419px) {
+  .convert__video {
+    padding: 5% 8% 6% 8%;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 1200px) {
+  .convert__video {
+    padding: 5% 7.3% 5.8% 7.4%;
+  }
 }

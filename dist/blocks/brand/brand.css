@@ -64,6 +64,7 @@ section.brand {
 @media only screen and (min-width: 1200px) {
   .brand .caption__title {
     margin: 0 0 24px;
+    text-align: left;
   }
 }
 
