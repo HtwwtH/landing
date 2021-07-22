@@ -553,37 +553,66 @@ section.reliability {
 }
 @media only screen and (min-width: 1200px) {
   .reliability h2 {
+    text-align: left;
     margin-bottom: 45.26px;
   }
 }
 
-.reliability.scroller {
+.reliability .container {
+  display: flex;
+  justify-content: center;
+}
+
+.reliability__item-left {
+  position: relative;
+  z-index: 1;
+  max-width: 378px;
+  margin-right: 176px;
+}
+
+.reliability__sticky {
+  position: sticky;
+  top: 0;
+}
+
+.reliability .scroller {
   display: grid;
   grid-template-columns: 200px 200px 208px 227px;
   grid-gap: 28px;
   grid-auto-flow: column;
 }
-.reliability.scroller.row {
+.reliability .scroller.row {
   margin: 0;
   overflow-x: auto;
 }
-.reliability.scroller::-webkit-scrollbar {
+.reliability .scroller::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 @media only screen and (min-width: 768px) {
-  .reliability.scroller {
+  .reliability .scroller {
     grid-gap: 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .reliability.scroller {
+  .reliability .scroller {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  ol.reliability__item-right {
+    list-style: none;
   }
 }
 
 .reliability__item {
   width: 100%;
+}
+@media only screen and (min-width: 1200px) {
+  .reliability__item:not(:last-child) {
+    margin-bottom: 120px;
+  }
 }
 .reliability__item .image {
   margin-bottom: 20px;
@@ -594,15 +623,35 @@ section.reliability {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (min-width: 1200px) {
+  .reliability__item .image {
+    max-width: 584px;
+  }
+}
 .reliability__item .text .title {
   font-weight: bold;
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 7px;
+  margin-left: 22px;
+}
+@media only screen and (min-width: 1200px) {
+  .reliability__item .text .title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
 }
 .reliability__item .text .description {
   font-size: 14px;
   line-height: 150%;
+}
+@media only screen and (min-width: 1200px) {
+  .reliability__item .text .description {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 section.situation {
   margin-bottom: 60px;

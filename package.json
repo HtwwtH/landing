@@ -26,6 +26,7 @@
     "browser-sync": "^2.27.4",
     "concat": "^1.0.3",
     "del": "^6.0.0",
+    "gsap": "^3.7.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -38,6 +39,7 @@
     "postcss": "^8.3.5",
     "postcss-inline-svg": "^5.0.0",
     "prettier": "^2.3.2",
-    "sass": "^1.35.2"
+    "sass": "^1.35.2",
+    "scrollscene": "0.0.24"
   }
 }

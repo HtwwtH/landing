@@ -1,7 +1,5 @@
-$(function () {
-  console.log('sdfsdf');
-  $('.ytp-large-play-button-bg').attr('fill', '#fff');
 
+$(function () {
   $('a[data-rel^=lightcase]').lightcase();
 
   $('.select-styler').select2({

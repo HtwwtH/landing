@@ -18,6 +18,7 @@ const source = {
   pages: './src/pug/*.pug',
   styles: './src/scss/**/*.scss',
   scripts: './src/js/*.js',
+  animationscripts: './src/js/animations/*.js',
   blocks: {
     dir: './src/blocks',
     html: './src/blocks/**/*.pug',
@@ -61,6 +62,14 @@ function scripts(cb) {
     .pipe(include())
     .pipe(babel({ presets: ['@babel/env'] }))
     .pipe(dest(`${dist}/js`));
+  cb();
+}
+
+function animationscripts(cb) {
+  src(source.animationscripts)
+    .pipe(include())
+    .pipe(babel({ presets: ['@babel/env'] }))
+    .pipe(dest(`${dist}/js/animations`));
   cb();
 }
 
@@ -171,6 +180,7 @@ exports.build = series(
     compilePugFast,
     styles,
     scripts,
+    animationscripts,
     copyAssets
   )
 );
@@ -184,6 +194,7 @@ exports.default = series(
     compilePugFast,
     styles,
     scripts,
+    animationscripts,
     copyAssets
   ),
   parallel(browsersync, startWatch)
