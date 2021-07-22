@@ -1,0 +1,137 @@
+@import "../../scss/includes/variables";
+@import "../../scss/includes/helpers";
+
+section.construction {
+  margin-bottom: 60px;
+  @include xl() {
+    margin-bottom: 150px;
+  }
+}
+
+.construction h2 {
+  margin-bottom: 18px;
+  @include md() {
+    margin-bottom: 28px;
+  }
+  @include xl() {
+    margin-bottom: 70px;
+  }
+}
+
+.construction__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   @include xl() {
+     flex-direction: row;
+     flex-wrap: wrap;
+   }
+}
+
+.construction__item {
+  position: relative;
+  width: 100%;
+  max-width: 428px;
+  
+  @include xl() {
+    max-width: unset;
+    height: fit-content;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .text {
+    position: absolute;
+    left: 0;
+  }
+}
+
+
+.construction__item.wave {
+  margin-bottom: 25px;
+  img, .text {
+    transform: rotate(-4deg);
+  }
+  .text {
+    bottom: 0;
+    margin-right: 30px;
+  }
+  .text .title, .text .description {
+    background: $skyBlue;
+  }
+
+  @include xl() {
+    width: 100%;
+    margin-bottom: 70px;
+
+    .text {
+      left: 665px;
+      top: 124px;
+      max-width: 511px;
+      .title {
+        font-size: 36px;
+        line-height: 28px;
+      }
+      .description {
+        font-size: 24px;
+        line-height: 150%;        
+      }
+    }
+    
+    img {
+      max-width: 677px;
+      margin-left: 50px;
+    }
+  }
+}
+
+.construction__item.second {
+  margin-bottom: 24px;
+  .text {
+    margin-right: 40px;
+    bottom: 41px;
+  }
+
+  @include xl() {
+    margin-bottom: 0;
+    padding-left: 127px;
+    margin-top: 140px;
+    .text {
+      max-width: 340px;
+      bottom: 38.5px;
+      margin-right: 48.5px;
+      right: 0;
+      left: unset;
+    }
+    img {
+      max-width: 491px;
+    }
+  }
+}
+
+.construction__item.third {
+  
+  .text {
+    bottom: 46px;
+    margin-right: 46px;
+  }
+
+  @include xl() {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 110px;
+    margin-bottom: 140px;
+    .text {
+      max-width: 335px;
+      top: 48px;
+      right: 138px;
+      left: unset;
+    }
+    img {
+      max-width: 467px;
+    }
+  }
+}

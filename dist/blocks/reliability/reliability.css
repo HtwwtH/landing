@@ -17,19 +17,21 @@ section.reliability {
   }
 }
 
-.reliability .container {
-  display: flex;
-  justify-content: center;
-}
+@media only screen and (min-width: 1200px) {
+  .reliability .container {
+    display: flex;
+    justify-content: center;
+  }
 
-.reliability__item-left {
-  position: relative;
-  z-index: 1;
-  max-width: 378px;
-  margin-right: 176px;
+  .reliability__item-left {
+    position: relative;
+    z-index: 1;
+    max-width: 378px;
+    margin-right: 176px;
+  }
 }
-
 .reliability__sticky {
+  width: 100%;
   position: sticky;
   top: 0;
 }
@@ -50,7 +52,7 @@ section.reliability {
 }
 @media only screen and (min-width: 768px) {
   .reliability .scroller {
-    grid-gap: 20px;
+    grid-gap: 18px;
   }
 }
 @media only screen and (min-width: 1200px) {
