@@ -1,5 +1,12 @@
 @font-face {
   font-family: "Inter";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Inter/Inter-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Inter";
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -69,8 +76,8 @@ ol {
 .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .col {
@@ -468,8 +475,8 @@ ol {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 
 .text-center {
@@ -634,6 +641,7 @@ ol {
 
 .h1, h1 {
   font-size: 32px;
+  font-weight: bold;
 }
 
 .h2, h2 {
@@ -659,6 +667,7 @@ ol {
 
 @media only screen and (min-width: 576px) {
   .h1, h1 {
+    text-align: center;
     font-size: 36px;
   }
 
@@ -668,7 +677,7 @@ ol {
 }
 @media only screen and (min-width: 1200px) {
   .h1, h1 {
-    font-size: 44px;
+    font-size: 42px;
   }
 
   .h2, h2 {
