@@ -9,6 +9,7 @@
 }
 
 
+  @include font('Inter', '../fonts/Inter/Inter-Light', 300);
   @include font('Inter', '../fonts/Inter/Inter-Regular');
   @include font('Inter', '../fonts/Inter/Inter-SemiBold', 600);
   @include font('Inter', '../fonts/Inter/Inter-Bold', bold);

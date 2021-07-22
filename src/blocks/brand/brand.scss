@@ -4,6 +4,8 @@
 section.brand {
   position: relative;
   margin-bottom: 60px;
+  overflow-x: hidden;
+
   @include md() {
     margin-bottom: 90px;
   }

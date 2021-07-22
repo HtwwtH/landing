@@ -11,6 +11,7 @@
 // font sizes
 .h1, h1 {
   font-size: $font-size-h1;
+  font-weight: bold;
 }
 
 .h2, h2 {
@@ -36,6 +37,7 @@
 
 @include sm() {
   .h1, h1 {
+    text-align: center;
     font-size: $font-size-h1-sm;
   }
 
