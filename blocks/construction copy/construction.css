@@ -46,7 +46,7 @@ section.construction {
     height: fit-content;
   }
 }
-.construction__item img, .construction__item video {
+.construction__item img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -59,12 +59,9 @@ section.construction {
 .construction__item.wave {
   margin-bottom: 25px;
 }
-.construction__item.wave img, .construction__item.wave video, .construction__item.wave .text {
+.construction__item.wave img, .construction__item.wave .text {
   -webkit-transform: rotate(-4deg);
           transform: rotate(-4deg);
-}
-.construction__item.wave video {
-  border-radius: 20px;
 }
 .construction__item.wave .text {
   bottom: 0;
@@ -91,7 +88,7 @@ section.construction {
     font-size: 24px;
     line-height: 150%;
   }
-  .construction__item.wave img, .construction__item.wave video {
+  .construction__item.wave img {
     max-width: 677px;
     margin-left: 50px;
   }
