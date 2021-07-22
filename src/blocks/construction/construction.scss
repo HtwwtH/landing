@@ -38,7 +38,7 @@ section.construction {
     height: fit-content;
   }
 
-  img {
+  img, video {
     width: 100%;
     object-fit: cover;
   }
@@ -52,8 +52,11 @@ section.construction {
 
 .construction__item.wave {
   margin-bottom: 25px;
-  img, .text {
+  img, video, .text {
     transform: rotate(-4deg);
+  }
+  video {
+    border-radius: 20px;
   }
   .text {
     bottom: 0;
@@ -81,7 +84,7 @@ section.construction {
       }
     }
     
-    img {
+    img, video {
       max-width: 677px;
       margin-left: 50px;
     }

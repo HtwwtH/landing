@@ -1,9 +1,34 @@
+//- вариант с волной картинкой
 section.construction
   .container
     h2 Конструкция, которой можно доверять
     .construction__items
       .construction__item.wave.col-xl-12
         img(src="/img/construction/wave.png", alt="")
+        .text.text--note
+          span.title В целости и сохранности
+          .description Водонепроницаемый и прочный пластик защищает вещи от пыли, грязи и влаги
+          
+      .construction__item.second.col-xl-6
+        img(src="/img/construction/construction2.png", alt="")
+        .text.text--note
+          span.title Открывается в край
+          .description Увеличенная ширина проёма, чтобы документы не мялись при складывании.
+
+      .construction__item.third.col-xl-6
+        img(src="/img/construction/construction3.png", alt="")
+        .text.text--note
+          span.title Ровная спайка швов
+          .description Крепко и чётко спаянные швы по всему периметру, без пробелов и зацепок.
+
+//- вариант с волной видео
+section.construction
+  .container
+    h2 Конструкция, которой можно доверять
+    .construction__items
+      .construction__item.wave.col-xl-12
+        .construction__video
+          video(src="/img/construction/wave-video.mp4", type="video/mp4", autoplay="autoplay", loop="loop", muted="muted", preload="auto" )
         .text.text--note
           span.title В целости и сохранности
           .description Водонепроницаемый и прочный пластик защищает вещи от пыли, грязи и влаги
