@@ -1,8 +1,6 @@
 "use strict";
 
 $(function () {
-  console.log('sdfsdf');
-  $('.ytp-large-play-button-bg').attr('fill', '#fff');
   $('a[data-rel^=lightcase]').lightcase();
   $('.select-styler').select2({
     width: '100%',

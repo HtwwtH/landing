@@ -263,7 +263,7 @@ html[data-lc-type=image] #lightcase-content .lightcase-contentInner {
 }
 
 .lightcase-open body {
-  overflow: hidden;
+  soverflow: hidden;
 }
 .lightcase-isMobileDevice .lightcase-open body {
   max-width: 100%;
