@@ -38,6 +38,7 @@ a {
   color: $colorDark;
 }
 
-ol {
-  padding-left: 0;
+ol, ul{
+  padding: 0;
+  margin: 0;
 }

@@ -69,10 +69,26 @@ section.main-block {
   }
 }
 
+// .main-block--type1
+.main-block--type1 {
+  .main-block__image {
+    @include xl() {
+      padding-right: 43px;
+    }
+  }
+}
+
 // .main-block--type2
-.main-block--type2 .main-block__info {
-  @include xl() {
-    order: -1;
+.main-block--type2 {
+  .main-block__info {
+    @include xl() {
+      order: -1;
+    }
+  }
+  .main-block__image {
+    @include xl() {
+      padding-left: 43px;
+    }
   }
 }
 
