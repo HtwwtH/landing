@@ -78,8 +78,19 @@ section.main-block {
 }
 
 @media only screen and (min-width: 1200px) {
+  .main-block--type1 .main-block__image {
+    padding-right: 43px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .main-block--type2 .main-block__info {
     order: -1;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-block--type2 .main-block__image {
+    padding-left: 43px;
   }
 }
 

@@ -251,6 +251,163 @@
           </div>
         </div>
       </section>
+      <section class="mobile-filters">
+        <div class="mobile-filters__inner">
+          <div class="mobile-filters__top">
+            <div class="mobile-filters__name">Фильтры</div>
+            <div class="mobile-filters__close">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9999 0L24 3.00005L14.9998 12.0002L24 21.0004L20.9999 24.0004L8.99974 12.0002L20.9999 0Z" fill="#6B717E"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.00005 0L0 3.00005L8.99974 12.0002L0 21.0004L3.00005 24.0004L14.9998 12.0002L3.00005 0Z" fill="#6B717E"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-filters__content">
+            <div class="mobile-filters__content-inner">
+              <div class="custom-select custom-select--modal">
+                <select class="custom-select__select">
+                  <option value="1">Цена по возрастанию ↑</option>
+                  <option value="2">Цена по убыванию ↓</option>
+                </select>
+              </div>
+              <div class="custom-select custom-select--modal">
+                <select class="custom-select__select" data-placeholder="Коллекция" multiple>
+                  <option value="1">Коллекция №1</option>
+                  <option value="2">Коллекция №2</option>
+                </select>
+              </div>
+              <div class="custom-select custom-select--modal">
+                <select class="custom-select__select custom-select__select--colors" data-placeholder="Цвет" multiple>
+                  <option value="green">Зеленый</option>
+                  <option value="blue">Синий</option>
+                </select>
+              </div>
+              <div class="custom-select custom-select--modal">
+                <select class="custom-select__select" data-placeholder="Формат">
+                  <option></option>
+                  <option value="1">Один</option>
+                  <option value="2">Два</option>
+                  <option value="3">Три</option>
+                </select>
+              </div>
+              <div class="custom-select custom-select--modal">
+                <select class="custom-select__select" data-placeholder="Материал">
+                  <option></option>
+                  <option value="1">Автоматическая</option>
+                  <option value="2">Неавтоматическая</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-filters__bottom">
+            <button class="mobile-filters__btn mobile-filters__reset">Сбросить</button>
+            <button class="mobile-filters__btn mobile-filters__apply">Применить</button>
+          </div>
+        </div>
+      </section>
+      <section class="featured-catalog">
+        <div class="container">
+          <h1>Каталог продукции</h1>
+          <button class="featured-catalog__trigger">Фильтры
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.47613 15.6781C7.27002 15.8842 6.99048 16 6.69901 16C6.09204 16 5.6 15.508 5.6 14.901V7.9276L0.216548 1.51873C0.0766781 1.35222 0 1.14172 0 0.924255C0 0.413803 0.413803 0 0.924255 0H14.2718C14.7845 0 15.2 0.415549 15.2 0.928154C15.2 1.13891 15.1283 1.34339 14.9966 1.50797L9.86667 7.9204V11.3696C9.86667 12.5977 9.37882 13.7754 8.51045 14.6438L7.47613 15.6781ZM6.66667 14.9333H6.71243L8.8 12.8458V7.54627L13.9837 1.06667H1.23L6.66667 7.53907V14.9333Z" fill="#22262F"></path>
+            </svg>
+          </button>
+          <form class="featured-catalog__filters">
+            <div class="featured-catalog__selects">
+              <div class="featured-catalog__select">
+                <div class="custom-select">
+                  <select class="custom-select__select" data-placeholder="Коллекция" multiple>
+                    <option value="1">Коллекция №1</option>
+                    <option value="2">Коллекция №2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="featured-catalog__select">
+                <div class="custom-select">
+                  <select class="custom-select__select custom-select__select--colors" data-placeholder="Цвет" multiple>
+                    <option value="green">Зеленый</option>
+                    <option value="blue">Синий</option>
+                  </select>
+                </div>
+              </div>
+              <div class="featured-catalog__select">
+                <div class="custom-select">
+                  <select class="custom-select__select" data-placeholder="Формат">
+                    <option></option>
+                    <option value="1">Один</option>
+                    <option value="2">Два</option>
+                    <option value="3">Три</option>
+                  </select>
+                </div>
+              </div>
+              <div class="featured-catalog__select">
+                <div class="custom-select">
+                  <select class="custom-select__select" data-placeholder="Материал">
+                    <option></option>
+                    <option value="1">Автоматическая</option>
+                    <option value="2">Неавтоматическая</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="featured-catalog__sort">
+              <div class="featured-catalog__sort-text">Сортировать:</div>
+              <div class="featured-catalog__sort-input">
+                <div class="custom-select">
+                  <select class="custom-select__select">
+                    <option value="1">Цена по возрастанию ↑</option>
+                    <option value="2">Цена по убыванию ↓</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="featured-catalog__items"><a href="#">
+              <div class="featured-catalog__item">
+                <div class="featured-catalog__item-image"><img src="img/catalog/image1.jpg" alt=""></div>
+                <div class="featured-catalog__item-name">Zip-пакет пластиковый ErichKrause® PVC Zip Pocket, A4</div>
+                <div class="featured-catalog__item-price">13,90 руб.</div>
+              </div></a><a href="#">
+              <div class="featured-catalog__item">
+                <div class="featured-catalog__item-image"><img src="img/catalog/image1.jpg" alt=""></div>
+                <div class="featured-catalog__item-name">Zip-пакет пластиковый ErichKrause® PVC Zip Pocket, B5...</div>
+                <div class="featured-catalog__item-price">78,20 руб.</div>
+              </div></a><a class="featured-catalog__item" href="#">
+              <div class="featured-catalog__item-image"><img src="img/catalog/image2.jpg" alt=""></div>
+              <div class="featured-catalog__item-name">Zip-пакет пластиковый ErichKrause® PVC Zip Pocket, A4</div>
+              <div class="featured-catalog__item-price">
+                <div class="featured-catalog__item-price-new">12,20 руб.</div>
+                <div class="featured-catalog__item-price-old">13,90 руб.</div>
+              </div></a><a class="featured-catalog__item" href="#">
+              <div class="featured-catalog__item-image"><img src="img/catalog/image2.jpg" alt=""></div>
+              <div class="featured-catalog__item-name">Zip-пакет пластиковый ErichKrause® PVC Zip Pocket, A4</div>
+              <div class="featured-catalog__item-price">
+                <div class="featured-catalog__item-price-new">12,20 руб.</div>
+                <div class="featured-catalog__item-price-old">13,90 руб.</div>
+              </div></a><a href="#">
+              <div class="featured-catalog__item">
+                <div class="featured-catalog__item-image"><img src="img/catalog/image1.jpg" alt=""></div>
+                <div class="featured-catalog__item-name">Zip-пакет пластиковый ErichKrause® PVC Zip Pocket, A4</div>
+                <div class="featured-catalog__item-price">13,90 руб.</div>
+              </div></a><a href="#">
+              <div class="featured-catalog__item">
+                <div class="featured-catalog__item-image"><img src="img/catalog/image1.jpg" alt=""></div>
+                <div class="featured-catalog__item-name">Zip-пакет пластиковый ErichKrause® PVC Zip Pocket, B5...</div>
+                <div class="featured-catalog__item-price">78,20 руб.</div>
+              </div></a><a href="#">
+              <div class="featured-catalog__item">
+                <div class="featured-catalog__item-image"><img src="img/catalog/image1.jpg" alt=""></div>
+                <div class="featured-catalog__item-name">Zip-пакет пластиковый ErichKrause® PVC Zip Pocket, A4</div>
+                <div class="featured-catalog__item-price">13,90 руб.</div>
+              </div></a><a href="#">
+              <div class="featured-catalog__item">
+                <div class="featured-catalog__item-image"><img src="img/catalog/image1.jpg" alt=""></div>
+                <div class="featured-catalog__item-name">Zip-пакет пластиковый ErichKrause® PVC Zip Pocket, B5...</div>
+                <div class="featured-catalog__item-price">78,20 руб.</div>
+              </div></a></div>
+        </div>
+      </section>
       <section class="brand"><img class="tape2" src="https://www.erichkrause.com/local/templates/tekstil/assets/img/brand/tape2.jpg" alt="">
         <div class="container">
           <div class="content"><img class="cup-mini" src="/img/brand/trophy-mini.png"><img class="cup" src="/img/brand/trophy.png">
@@ -267,5 +424,8 @@
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
     <script src="/blocks/format/format.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous"></script>
+    <script src="/blocks/custom-select/custom-select.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/blocks/featured-catalog/featured-catalog.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
