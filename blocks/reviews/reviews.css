@@ -1,0 +1,100 @@
+section.reviews {
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 1200px) {
+  section.reviews {
+    margin-bottom: 150px;
+  }
+}
+
+.reviews h2 {
+  text-align: center;
+}
+
+.reviews .slide {
+  position: relative;
+  text-align: left;
+  padding: 24px;
+  min-height: auto;
+  margin: 9px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.04), 0px 6px 16px rgba(0, 0, 0, 0.08);
+}
+@media only screen and (min-width: 1200px) {
+  .reviews .slide {
+    margin: 9px 30px;
+  }
+}
+.reviews .slide:after {
+  content: url(/img/icons/quot.svg);
+  position: absolute;
+  top: -33px;
+  right: 0;
+  color: #E91C2E;
+  z-index: 2;
+}
+.reviews .slide__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.reviews .slide__text {
+  font: 16px/1.5 "Inter", sans-serif;
+}
+.reviews .slide__text:last-child {
+  margin-bottom: 0;
+}
+.reviews .stars {
+  margin-bottom: 18px;
+}
+.reviews .stars li {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url(/img/icons/star.svg) no-repeat center center/contain;
+}
+.reviews .stars li:not(:last-child) {
+  margin-right: 5px;
+}
+.reviews .slick-list {
+  padding-top: 55px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews .slick-list {
+    padding-top: 50px;
+  }
+}
+.reviews .slick-track {
+  display: flex !important;
+}
+.reviews .slick-slide {
+  height: inherit !important;
+}
+.reviews .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  list-style: none;
+}
+.reviews .slick-dots li {
+  margin: 0 10px;
+}
+.reviews .slick-dots li.slick-active button {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #BDBDBD;
+}
+.reviews .slick-dots button {
+  display: block;
+  font-size: 0;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  transition: all 0.3s ease-out;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
