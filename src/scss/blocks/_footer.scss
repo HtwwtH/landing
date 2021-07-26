@@ -1,3 +1,79 @@
-.footer {
+@import "../../scss/includes/variables";
+@import "../../scss/includes/helpers";
 
+.footer {
+  background-color: $skyBlue;
+  padding-top: 16px;
+  padding-bottom: 40px;
+
+  @include md() {
+    padding-top: 40px;
+  }
+
+  &__top {
+    margin-bottom: 12px;
+    @include lg() {
+      margin-bottom: 48px;
+    }
+
+    a {
+      display: block;
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 4px;
+      transition: color .3s;
+
+      &:hover {
+        transition: color .3s;
+        color: #E91C2E;
+      }
+
+      @include md() {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 8px;
+      }
+      @include lg() {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__top-col {
+    margin-bottom: 8px;
+  }
+
+  &__bottom span {
+    color: #798894;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    @include lg() {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  a.footer__title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    @include lg() {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__social {
+    @include lg() {
+      margin-left: 36px;
+    }
+    a {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
 }
