@@ -71,6 +71,16 @@ section.main-block {
 
 // .main-block--type1
 .main-block--type1 {
+  .main-block__content {
+    @include xl() {
+      justify-content: space-between; 
+    }
+  }
+  .main-block__info {
+    @include xl() {
+      max-width: 613px;
+    }
+  }
   .main-block__image {
     @include xl() {
       padding-right: 43px;
@@ -80,8 +90,14 @@ section.main-block {
 
 // .main-block--type2
 .main-block--type2 {
+  .main-block__content {
+    @include xl() {
+      justify-content: space-between; 
+    }
+  }
   .main-block__info {
     @include xl() {
+      max-width: 613px;
       order: -1;
     }
   }

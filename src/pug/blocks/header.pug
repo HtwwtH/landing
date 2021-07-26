@@ -1,0 +1,51 @@
+header.header 
+	.header__top
+		.container 
+			.row
+				.col-xl-2
+					a(href="#") Компания сегодня
+				.col-lg-10
+					.header__top-menu
+						.header__top-item.country-selector
+							a(href="#") Россия
+						.header__top-item.header__language
+							a(href="#") RU
+						.header__top-item.header__auth
+							a(href="#") Личный кабинет
+
+	.header__main
+		.container 
+			.row
+				.header__logo.col-xl-2
+					a(href="/").logo-wrapper
+						img(src="/img/icons/logo.svg")
+					.header__hidden-menu
+						a(href="/company/").hidden-menu__item О компании
+						a(href="/company/values/").hidden-menu__item Ценности компании
+						a(href="/company/brands/").hidden-menu__item Наши бренды
+						a(href="/company/catalogs/").hidden-menu__item Каталоги
+						a(href="/company/news/").hidden-menu__item Новости
+						a(href="/company/promo/").hidden-menu__item Промо
+						a(href="/company/contests/").hidden-menu__item Конкурсы
+						a(href="/company/contacts/").hidden-menu__item Контакты
+						a(href="/company/stores/").hidden-menu__item Где купить
+
+				.header__main-content.col-xl-10
+					.menu
+						a(href="#").item Канцтовары
+						a(href="#").item Товары для творчества
+						a(href="#").item Ранцы и сумки
+						a(href="#").item Подарки и декор
+						a(href="#").item Акции
+
+					.header__form-inner
+						div(id="title-search", data-flexible-input="").header__form-input
+							form(action="/search/").form-search-header
+								input(id="desctopSearch", type="text", name="q", placeholder="Поиск", autocomplete="off")
+
+					.header__basket-wrap
+						a(href="/cart/", data-basket-link="").header__basket
+							input(type="text", placeholder="0", readonly="").basket-element-count
+						
+
+						

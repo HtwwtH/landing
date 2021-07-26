@@ -9,11 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/blocks.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <body>
     <div id="overlay"></div>
     <main id="main">
+      <header class="header"> 
+        <div class="header__top">
+          <div class="container"> 
+            <div class="row">
+              <div class="col-xl-2"><a href="#">Компания сегодня</a></div>
+              <div class="col-lg-10">
+                <div class="header__top-menu">
+                  <div class="header__top-item country-selector"><a href="#">Россия</a></div>
+                  <div class="header__top-item header__language"><a href="#">RU</a></div>
+                  <div class="header__top-item header__auth"><a href="#">Личный кабинет</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__main">
+          <div class="container"> 
+            <div class="row">
+              <div class="header__logo col-xl-2"><a class="logo-wrapper" href="/"><img src="/img/icons/logo.svg"></a>
+                <div class="header__hidden-menu"><a class="hidden-menu__item" href="/company/">О компании</a><a class="hidden-menu__item" href="/company/values/">Ценности компании</a><a class="hidden-menu__item" href="/company/brands/">Наши бренды</a><a class="hidden-menu__item" href="/company/catalogs/">Каталоги</a><a class="hidden-menu__item" href="/company/news/">Новости</a><a class="hidden-menu__item" href="/company/promo/">Промо</a><a class="hidden-menu__item" href="/company/contests/">Конкурсы</a><a class="hidden-menu__item" href="/company/contacts/">Контакты</a><a class="hidden-menu__item" href="/company/stores/">Где купить</a></div>
+              </div>
+              <div class="header__main-content col-xl-10">
+                <div class="menu"><a class="item" href="#">Канцтовары</a><a class="item" href="#">Товары для творчества</a><a class="item" href="#">Ранцы и сумки</a><a class="item" href="#">Подарки и декор</a><a class="item" href="#">Акции</a></div>
+                <div class="header__form-inner">
+                  <div class="header__form-input" id="title-search" data-flexible-input="">
+                    <form class="form-search-header" action="/search/">
+                      <input id="desctopSearch" type="text" name="q" placeholder="Поиск" autocomplete="off">
+                    </form>
+                  </div>
+                </div>
+                <div class="header__basket-wrap"><a class="header__basket" href="/cart/" data-basket-link="">
+                    <input class="basket-element-count" type="text" placeholder="0" readonly=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
       <section class="main-block main-block--type1">
         <div class="container">
           <div class="main-block__content row"> 
@@ -483,7 +519,7 @@
           </div>
         </div>
       </section>
-      <footer class="footer js-footer">
+      <footer class="footer">
         <div class="container">
           <div class="footer__top">
             <div class="row">          
