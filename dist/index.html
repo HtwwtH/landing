@@ -20,9 +20,23 @@
               <div class="col-xl-2"><a href="#">Компания сегодня</a></div>
               <div class="col-lg-10">
                 <div class="header__top-menu">
-                  <div class="header__top-item country-selector"><a href="#">Россия</a></div>
-                  <div class="header__top-item header__language"><a href="#">RU</a></div>
-                  <div class="header__top-item header__auth"><a href="#">Личный кабинет</a></div>
+                  <div class="header__top-item country-selector dropdown">
+                    <div class="country-wrapper dropdown-wrapper"><a class="header__item" href="#">Россия</a></div>
+                    <div class="dropdown__menu" id="countries-list">
+                      <div class="row">
+                        <div class="col-6"><a class="header__item bold" href="#">Африка и Ближний Восток</a><a class="header__item" href="#">Израиль</a><a class="header__item" href="#">Иран</a><a class="header__item" href="#">Катар</a><a class="header__item" href="#">Кувейт</a><a class="header__item" href="#">Ливан</a><a class="header__item" href="#">Марокко</a><a class="header__item" href="#">Тунис</a><a class="header__item bold" href="#">Азия</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Казахстан</a><a class="header__item" href="#">Киргизия</a><a class="header__item" href="#">Монголия</a><a class="header__item bold" href="#">Европа</a><a class="header__item" href="#">Армения</a><a class="header__item" href="#">Беларусь</a><a class="header__item" href="#">Болгария</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Армения</a><a class="header__item" href="#">Беларусь</a><a class="header__item" href="#">Болгария</a></div>
+                        <div class="col-6"><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item bold" href="#">Америка</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a><a class="header__item" href="#">Япония</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__top-item header__language dropdown"> 
+                    <div class="language-wrapper dropdown-wrapper"> <a class="header__item" href="#">RU</a></div>
+                    <div class="dropdown__menu"><a class="header__item active" href="#">Русский</a></div>
+                  </div>
+                  <div class="header__top-item header__auth dropdown">
+                    <div class="auth-wrapper dropdown-wrapper"><a href="#">Личный кабинет</a></div>
+                    <div class="dropdown__menu"><a class="header__item" href="#">Вход|Регистрация</a><a class="header__item" href="#">Избранное</a></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -31,11 +45,72 @@
         <div class="header__main">
           <div class="container"> 
             <div class="row">
-              <div class="header__logo col-xl-2"><a class="logo-wrapper" href="/"><img src="/img/icons/logo.svg"></a>
-                <div class="header__hidden-menu"><a class="hidden-menu__item" href="/company/">О компании</a><a class="hidden-menu__item" href="/company/values/">Ценности компании</a><a class="hidden-menu__item" href="/company/brands/">Наши бренды</a><a class="hidden-menu__item" href="/company/catalogs/">Каталоги</a><a class="hidden-menu__item" href="/company/news/">Новости</a><a class="hidden-menu__item" href="/company/promo/">Промо</a><a class="hidden-menu__item" href="/company/contests/">Конкурсы</a><a class="hidden-menu__item" href="/company/contacts/">Контакты</a><a class="hidden-menu__item" href="/company/stores/">Где купить</a></div>
+              <div class="header__burger"> 
+                <button id="showMobileMenu">&#9776;</button>
               </div>
+              <div class="header__mob-menu-content"></div>
+              <div class="header__logo dropdown col-5 col-xl-2"><a class="logo-wrapper dropdown-wrapper" href="/"><img src="/img/icons/logo.svg"></a>
+                <div class="dropdown__menu"><a class="header__item" href="/company/">О компании</a><a class="header__item" href="/company/values/">Ценности компании</a><a class="header__item" href="/company/brands/">Наши бренды</a><a class="header__item" href="/company/catalogs/">Каталоги</a><a class="header__item" href="/company/news/">Новости</a><a class="header__item" href="/company/promo/">Промо</a><a class="header__item" href="/company/contests/">Конкурсы</a><a class="header__item" href="/company/contacts/">Контакты</a><a class="header__item" href="/company/stores/">Где купить</a></div>
+              </div>
+              <button class="header__search-button_mobile" id="showMobileSearch"> <img src="img/icons/search.svg"></button>
               <div class="header__main-content col-xl-10">
-                <div class="menu"><a class="item" href="#">Канцтовары</a><a class="item" href="#">Товары для творчества</a><a class="item" href="#">Ранцы и сумки</a><a class="item" href="#">Подарки и декор</a><a class="item" href="#">Акции</a></div>
+                <div class="menu">
+                  <div class="dropdown item">
+                    <div class="dropdown-wrapper"><a href="#">Канцтовары</a></div>
+                    <div class="dropdown__menu header__main-submenu">
+                      <div class="row">
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Ручки</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a></div>
+                          <div class="header__content-category"><a class="header__content-title" href="#">Ручки</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a></div>
+                        </div>
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Ручки</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a></div>
+                        </div>
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Ручки</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a></div>
+                        </div>
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Ручки</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a></div>
+                        </div>
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Ручки</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a><a class="header__item" href="#">Ручки шариковые</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown item">
+                    <div class="dropdown-wrapper"><a href="#">Товары для творчества</a></div>
+                    <div class="dropdown__menu header__main-submenu">
+                      <div class="row">
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a></div>
+                          <div class="header__content-category"><a class="header__content-title" href="#">Краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a></div>
+                        </div>
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a></div>
+                        </div>
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a></div>
+                        </div>
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a></div>
+                        </div>
+                        <div class="header__content-col">
+                          <div class="header__content-category"><a class="header__content-title" href="#">Краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a><a class="header__item" href="#">Акварельные краски</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown item">
+                    <div class="dropdown-wrapper"><a href="#">Ранцы и сумки</a></div>
+                  </div>
+                  <div class="dropdown item">
+                    <div class="dropdown-wrapper"><a href="#">Подарки и декор</a></div>
+                  </div>
+                  <div class="dropdown item">
+                    <div class="dropdown-wrapper"><a href="#">Акции</a></div>
+                  </div>
+                </div>
                 <div class="header__form-inner">
                   <div class="header__form-input" id="title-search" data-flexible-input="">
                     <form class="form-search-header" action="/search/">
@@ -43,8 +118,24 @@
                     </form>
                   </div>
                 </div>
-                <div class="header__basket-wrap"><a class="header__basket" href="/cart/" data-basket-link="">
-                    <input class="basket-element-count" type="text" placeholder="0" readonly=""></a></div>
+                <div class="header__basket-wrap dropdown">
+                  <div class="dropdown-wrapper"><a class="header__basket" href="/cart/" data-basket-link="">
+                      <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.8248 7.00751C17.8248 3.45372 15.0018 0.568115 11.5198 0.568115C8.03646 0.568115 5.21191 3.45372 5.21191 7.00751" stroke="black" stroke-width="0.8362" stroke-miterlimit="10"></path>
+                        <path d="M19.9076 23.1417C19.7874 23.8515 19.1122 24.4318 18.4066 24.4318H4.63111C3.92553 24.4318 3.25037 23.8508 3.12943 23.1417L0.608335 8.29772C0.488142 7.58863 0.96669 7.00757 1.67153 7.00757H21.3647C22.0703 7.00757 22.5488 7.58863 22.4287 8.29772L19.9076 23.1417Z" stroke="black" stroke-width="0.8362" stroke-miterlimit="10"></path>
+                      </svg>
+                      <input class="basket-element-count" type="text" placeholder="0" readonly=""></a></div>
+                  <div class="dropdown__menu header__basket-content">
+                    <p>В Вашей корзине пока нет товаров</p>
+                  </div>
+                </div>
+              </div>
+              <div class="header__form-inner_mobile">
+                <div class="header__form-input">
+                  <form class="form-search-header" action="/search/">
+                    <input id="mobileSearch" type="text" name="q" placeholder="Поиск" autocomplete="off">
+                  </form>
+                </div>
               </div>
             </div>
           </div>

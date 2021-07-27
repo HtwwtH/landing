@@ -27,6 +27,7 @@ section.main-block {
 @media only screen and (min-width: 1200px) {
   .main-block__image {
     max-width: 635.78px;
+    box-sizing: content-box;
   }
 }
 

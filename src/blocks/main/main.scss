@@ -26,6 +26,7 @@ section.main-block {
 
   @include xl() {
     max-width: 635.78px;
+    box-sizing: content-box;
   }
 }
 

@@ -6,46 +6,268 @@ header.header
 					a(href="#") Компания сегодня
 				.col-lg-10
 					.header__top-menu
-						.header__top-item.country-selector
-							a(href="#") Россия
-						.header__top-item.header__language
-							a(href="#") RU
-						.header__top-item.header__auth
-							a(href="#") Личный кабинет
+						.header__top-item.country-selector.dropdown
+							.country-wrapper.dropdown-wrapper
+								a(href="#").header__item Россия
+							div(id="countries-list").dropdown__menu
+								.row
+									.col-6
+										a(href="#").header__item.bold Африка и Ближний Восток
+										a(href="#").header__item Израиль
+										a(href="#").header__item Иран
+										a(href="#").header__item Катар
+										a(href="#").header__item Кувейт
+										a(href="#").header__item Ливан
+										a(href="#").header__item Марокко
+										a(href="#").header__item Тунис
+
+										a(href="#").header__item.bold Азия
+										a(href="#").header__item Япония
+										a(href="#").header__item Казахстан
+										a(href="#").header__item Киргизия
+										a(href="#").header__item Монголия
+
+										a(href="#").header__item.bold Европа
+										a(href="#").header__item Армения
+										a(href="#").header__item Беларусь
+										a(href="#").header__item Болгария
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Армения
+										a(href="#").header__item Беларусь
+										a(href="#").header__item Болгария
+
+									.col-6
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+
+										a(href="#").header__item.bold Америка
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+										a(href="#").header__item Япония
+
+						.header__top-item.header__language.dropdown 
+							.language-wrapper.dropdown-wrapper 
+								a(href="#").header__item RU
+							.dropdown__menu
+								a(href="#").header__item.active Русский
+							
+							
+						.header__top-item.header__auth.dropdown
+							.auth-wrapper.dropdown-wrapper
+								a(href="#") Личный кабинет
+							.dropdown__menu
+								a(href="#").header__item Вход|Регистрация
+								a(href="#").header__item Избранное
 
 	.header__main
 		.container 
 			.row
-				.header__logo.col-xl-2
-					a(href="/").logo-wrapper
+				.header__burger 
+					button(id="showMobileMenu") &#9776;
+
+				.header__mob-menu-content
+
+
+				.header__logo.dropdown.col-5.col-xl-2
+					a(href="/").logo-wrapper.dropdown-wrapper
 						img(src="/img/icons/logo.svg")
-					.header__hidden-menu
-						a(href="/company/").hidden-menu__item О компании
-						a(href="/company/values/").hidden-menu__item Ценности компании
-						a(href="/company/brands/").hidden-menu__item Наши бренды
-						a(href="/company/catalogs/").hidden-menu__item Каталоги
-						a(href="/company/news/").hidden-menu__item Новости
-						a(href="/company/promo/").hidden-menu__item Промо
-						a(href="/company/contests/").hidden-menu__item Конкурсы
-						a(href="/company/contacts/").hidden-menu__item Контакты
-						a(href="/company/stores/").hidden-menu__item Где купить
+					.dropdown__menu
+						a(href="/company/").header__item О компании
+						a(href="/company/values/").header__item Ценности компании
+						a(href="/company/brands/").header__item Наши бренды
+						a(href="/company/catalogs/").header__item Каталоги
+						a(href="/company/news/").header__item Новости
+						a(href="/company/promo/").header__item Промо
+						a(href="/company/contests/").header__item Конкурсы
+						a(href="/company/contacts/").header__item Контакты
+						a(href="/company/stores/").header__item Где купить
+
+				button(id="showMobileSearch").header__search-button_mobile 
+					img(src="img/icons/search.svg")
 
 				.header__main-content.col-xl-10
 					.menu
-						a(href="#").item Канцтовары
-						a(href="#").item Товары для творчества
-						a(href="#").item Ранцы и сумки
-						a(href="#").item Подарки и декор
-						a(href="#").item Акции
+						.dropdown.item
+							.dropdown-wrapper
+								a(href="#") Канцтовары
+							.dropdown__menu.header__main-submenu
+								.row
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Ручки
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+										.header__content-category
+											a(href="#").header__content-title Ручки
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Ручки
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Ручки
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Ручки
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Ручки
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+											a(href="#").header__item Ручки шариковые
+
+						.dropdown.item
+							.dropdown-wrapper
+								a(href="#") Товары для творчества
+							.dropdown__menu.header__main-submenu
+								.row
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+										.header__content-category
+											a(href="#").header__content-title Краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+									.header__content-col
+										.header__content-category
+											a(href="#").header__content-title Краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+											a(href="#").header__item Акварельные краски
+
+						.dropdown.item
+							.dropdown-wrapper
+								a(href="#") Ранцы и сумки
+
+						.dropdown.item
+							.dropdown-wrapper
+								a(href="#") Подарки и декор
+						
+						.dropdown.item
+							.dropdown-wrapper
+								a(href="#") Акции
 
 					.header__form-inner
 						div(id="title-search", data-flexible-input="").header__form-input
 							form(action="/search/").form-search-header
 								input(id="desctopSearch", type="text", name="q", placeholder="Поиск", autocomplete="off")
 
-					.header__basket-wrap
-						a(href="/cart/", data-basket-link="").header__basket
-							input(type="text", placeholder="0", readonly="").basket-element-count
+					.header__basket-wrap.dropdown
+						.dropdown-wrapper
+							a(href="/cart/", data-basket-link="").header__basket
+								svg(width="23", height="25", viewBox="0 0 23 25", fill="none", xmlns="http://www.w3.org/2000/svg")
+									path(d="M17.8248 7.00751C17.8248 3.45372 15.0018 0.568115 11.5198 0.568115C8.03646 0.568115 5.21191 3.45372 5.21191 7.00751", stroke="black", stroke-width="0.8362", stroke-miterlimit="10")
+									path(d="M19.9076 23.1417C19.7874 23.8515 19.1122 24.4318 18.4066 24.4318H4.63111C3.92553 24.4318 3.25037 23.8508 3.12943 23.1417L0.608335 8.29772C0.488142 7.58863 0.96669 7.00757 1.67153 7.00757H21.3647C22.0703 7.00757 22.5488 7.58863 22.4287 8.29772L19.9076 23.1417Z", stroke="black", stroke-width="0.8362", stroke-miterlimit="10")
+
+								input(type="text", placeholder="0", readonly="").basket-element-count
+						.dropdown__menu.header__basket-content
+							p В Вашей корзине пока нет товаров
+
+				.header__form-inner_mobile
+					.header__form-input
+						form(action="/search/").form-search-header
+							input(id="mobileSearch", type="text", name="q", placeholder="Поиск", autocomplete="off")
+
 						
 
 						
