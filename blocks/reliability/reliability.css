@@ -12,28 +12,14 @@ section.reliability {
 }
 @media only screen and (min-width: 1200px) {
   .reliability h2 {
-    text-align: left;
     margin-bottom: 45.26px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .reliability .container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .reliability__item-left {
-    position: relative;
-    z-index: 1;
-    max-width: 378px;
-    margin-right: 176px;
-  }
-}
 .reliability__sticky {
   width: 100%;
   position: sticky;
-  top: 0;
+  top: 125px;
 }
 
 .reliability .scroller {
@@ -45,6 +31,12 @@ section.reliability {
 .reliability .scroller.row {
   margin: 0;
   overflow-x: auto;
+}
+@media only screen and (min-width: 1200px) {
+  .reliability .scroller.row {
+    margin: 0 54px;
+    overflow-x: unset;
+  }
 }
 .reliability .scroller::-webkit-scrollbar {
   width: 0;
@@ -62,17 +54,39 @@ section.reliability {
 }
 
 @media only screen and (min-width: 1200px) {
-  ol.reliability__item-right {
+  ol.scroller {
     list-style: none;
   }
 }
 
 .reliability__item {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 @media only screen and (min-width: 1200px) {
+  .reliability__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .reliability__item:not(:last-child) {
     margin-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .reliability__item-left {
+    position: relative;
+    z-index: 1;
+    min-width: 378px;
+    margin-right: 176px;
+  }
+}
+.reliability__item-right {
+  order: -1;
+}
+@media only screen and (min-width: 1200px) {
+  .reliability__item-right {
+    order: unset;
   }
 }
 .reliability__item .image {

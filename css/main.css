@@ -1811,6 +1811,7 @@ button {
 }
 
 .header__main {
+  width: 100%;
   background: #D7E9F8;
   position: relative;
   padding-top: 8px;
@@ -1842,50 +1843,6 @@ button {
     flex-wrap: wrap;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .header__main .header__burger {
-    display: none;
-  }
-}
-.header__main .header__burger button {
-  background: transparent;
-  padding-left: 16px;
-  padding-right: 16px;
-  max-height: 30px;
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  color: #E91C2E;
-  font-weight: bold;
-}
-.header__main .header__logo {
-  height: 30px;
-  max-width: 141px;
-}
-@media only screen and (min-width: 1200px) {
-  .header__main .header__logo {
-    max-width: unset;
-    height: 50px;
-    padding-right: 5px;
-  }
-}
-.header__main .header__logo img {
-  max-width: 100%;
-  height: 100%;
-}
-.header__main .header__logo .logo-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background: #E91C2E;
-}
-.header__main .header__logo .dropdown__menu {
-  margin-top: 0;
-  top: 50px;
-  left: 17px;
-  width: calc(100% - 22px);
-}
 .header__main-content {
   background: #D7E9F8;
   display: flex;
@@ -1896,6 +1853,52 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.header__logo {
+  height: 30px;
+  max-width: 141px;
+}
+@media only screen and (min-width: 1200px) {
+  .header__logo {
+    max-width: unset;
+    height: 50px;
+    padding-right: 5px;
+  }
+}
+.header__logo img {
+  max-width: 100%;
+  height: 100%;
+}
+.header__logo .logo-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: #E91C2E;
+}
+.header__logo .dropdown__menu {
+  margin-top: 0;
+  top: 50px;
+  left: 17px;
+  width: calc(100% - 22px);
+}
+
+@media only screen and (min-width: 1200px) {
+  .header__burger {
+    display: none;
+  }
+}
+.header__burger button {
+  background: transparent;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #E91C2E;
+  font-weight: bold;
 }
 
 .header__mob-menu-content {
