@@ -1,4 +1,5 @@
 header.header 
+	//- header top line (white)
 	.header__top
 		.container 
 			.row
@@ -6,6 +7,7 @@ header.header
 					a(href="#") Компания сегодня
 				.col-lg-10
 					.header__top-menu
+						//- country
 						.header__top-item.country-selector.dropdown
 							.country-wrapper.dropdown-wrapper
 								a(href="#").header__item Россия
@@ -75,13 +77,14 @@ header.header
 										a(href="#").header__item Япония
 										a(href="#").header__item Япония
 
+						//- language
 						.header__top-item.header__language.dropdown 
 							.language-wrapper.dropdown-wrapper 
 								a(href="#").header__item RU
 							.dropdown__menu
 								a(href="#").header__item.active Русский
 							
-							
+						//- auth
 						.header__top-item.header__auth.dropdown
 							.auth-wrapper.dropdown-wrapper
 								a(href="#") Личный кабинет
@@ -89,15 +92,18 @@ header.header
 								a(href="#").header__item Вход|Регистрация
 								a(href="#").header__item Избранное
 
+	//- header main line (blue)
 	.header__main
 		.container 
 			.row
 				.header__burger 
 					button(id="showMobileMenu") &#9776;
 
+				//- mobile main menu (blue, goes from left)
 				.header__mob-menu-content
+					.header__mob-menu-content-wrapper
 
-
+				//- logo
 				.header__logo.dropdown.col-5.col-xl-2
 					a(href="/").logo-wrapper.dropdown-wrapper
 						img(src="/img/icons/logo.svg")
@@ -112,9 +118,11 @@ header.header
 						a(href="/company/contacts/").header__item Контакты
 						a(href="/company/stores/").header__item Где купить
 
+				//- mobile search button
 				button(id="showMobileSearch").header__search-button_mobile 
 					img(src="img/icons/search.svg")
 
+				//- main menu
 				.header__main-content.col-xl-10
 					.menu
 						.dropdown.item
@@ -247,11 +255,13 @@ header.header
 							.dropdown-wrapper
 								a(href="#") Акции
 
+					//- search
 					.header__form-inner
 						div(id="title-search", data-flexible-input="").header__form-input
 							form(action="/search/").form-search-header
 								input(id="desctopSearch", type="text", name="q", placeholder="Поиск", autocomplete="off")
 
+					//- basket
 					.header__basket-wrap.dropdown
 						.dropdown-wrapper
 							a(href="/cart/", data-basket-link="").header__basket
@@ -263,6 +273,7 @@ header.header
 						.dropdown__menu.header__basket-content
 							p В Вашей корзине пока нет товаров
 
+				//- mobile search
 				.header__form-inner_mobile
 					.header__form-input
 						form(action="/search/").form-search-header
