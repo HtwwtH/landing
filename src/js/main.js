@@ -1,5 +1,6 @@
 
 $(function () {
+
   // click burger button
   $('#showMobileMenu').click(function () {
     if ($(".header__menu-mobile").css('left') == '0px')
