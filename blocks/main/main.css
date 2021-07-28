@@ -26,8 +26,7 @@ section.main-block {
 }
 @media only screen and (min-width: 1200px) {
   .main-block__image {
-    max-width: 635.78px;
-    box-sizing: content-box;
+    max-width: 667px;
   }
 }
 
@@ -88,11 +87,6 @@ section.main-block {
     max-width: 613px;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .main-block--type1 .main-block__image {
-    padding-right: 43px;
-  }
-}
 
 @media only screen and (min-width: 1200px) {
   .main-block--type2 .main-block__content {
@@ -103,11 +97,6 @@ section.main-block {
   .main-block--type2 .main-block__info {
     max-width: 613px;
     order: -1;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .main-block--type2 .main-block__image {
-    padding-left: 43px;
   }
 }
 

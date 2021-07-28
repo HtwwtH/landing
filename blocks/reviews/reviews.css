@@ -57,6 +57,7 @@ section.reviews {
 }
 .reviews .slick-list {
   padding-top: 55px;
+  margin-bottom: 60px;
 }
 @media only screen and (min-width: 768px) {
   .reviews .slick-list {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 .select2-container {
   box-sizing: border-box;
   display: inline-block;
@@ -656,39 +657,39 @@
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter, sans-serif";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Inter/Inter-Light.ttf") format("ttf");
+  src: url("/fonts/Inter/Inter-Light.woff2") format("woff2"), url("/fonts/Inter/Inter-Light.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter, sans-serif";
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Inter/Inter-Regular.ttf") format("ttf");
+  src: url("/fonts/Inter/Inter-Regular.woff2") format("woff2"), url("/fonts/Inter/Inter-Regular.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter, sans-serif";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Inter/Inter-Medium.ttf") format("ttf");
+  src: url("/fonts/Inter/Inter-Medium.woff2") format("woff2"), url("/fonts/Inter/Inter-Medium.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter, sans-serif";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Inter/Inter-SemiBold.ttf") format("ttf");
+  src: url("/fonts/Inter/Inter-SemiBold.woff2") format("woff2"), url("/fonts/Inter/Inter-SemiBold.ttf") format("ttf");
 }
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter, sans-serif";
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Inter/Inter-Bold.ttf") format("ttf");
+  src: url("/fonts/Inter/Inter-Bold.woff2") format("woff2"), url("/fonts/Inter/Inter-Bold.ttf") format("ttf");
 }
 .icon {
   display: inline-block;
@@ -1797,16 +1798,20 @@ button {
   font-weight: bold;
 }
 
-.dropdown__menu a.header__item {
+.header__link {
+  display: block;
+}
+
+.dropdown__menu a.header__link {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.header__item.active {
+.header__link.active {
   color: #E91C2E;
 }
 
-.header__item.bold {
+.header__link.bold {
   font-weight: bold;
 }
 
@@ -1832,6 +1837,7 @@ button {
 .header__main .row {
   margin-right: 0;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 576px) {
   .header__main .row {
@@ -1900,12 +1906,17 @@ button {
   color: #E91C2E;
   font-weight: bold;
 }
+.header__burger button svg {
+  width: 100%;
+  height: 100%;
+  max-width: 30px;
+  fill: #E91C2E;
+}
 
-.header__mob-menu-content {
-  display: none;
+.header__menu-mobile {
   position: absolute;
   top: 46px;
-  left: 0;
+  left: -280px;
   background-color: #D7E9F8;
   box-sizing: border-box;
   width: 73%;
@@ -1914,6 +1925,25 @@ button {
   z-index: 500;
   overflow-y: auto;
   overflow-x: hidden;
+}
+@media only screen and (min-width: 1200px) {
+  .header__menu-mobile {
+    display: none;
+  }
+}
+
+.menu-mobile__wrapper {
+  padding: 16px;
+}
+
+.menu-mobile__block {
+  margin-bottom: 16px;
+}
+.menu-mobile__block.social .header__link {
+  margin-bottom: 4px;
+}
+.menu-mobile__block.social .header__link img {
+  width: 25px;
 }
 
 .dropdown {
@@ -1990,7 +2020,7 @@ button {
   display: flex;
   align-items: center;
   padding-left: 8px;
-  padding-right: 18px;
+  padding-right: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -2054,7 +2084,8 @@ button {
 }
 .header__form-inner_mobile .form-search-header input {
   width: 100%;
-  max-width: 360px;
+  max-width: 400px;
+  height: 32px;
   border: 1px solid #E91C2E;
   border-radius: 0;
 }
@@ -2167,7 +2198,7 @@ button {
 }
 .footer__top a {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 16px;
   margin-bottom: 4px;
   transition: color 0.3s;
@@ -2206,7 +2237,7 @@ button {
   }
 }
 .footer a.footer__title {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 @media only screen and (min-width: 992px) {
