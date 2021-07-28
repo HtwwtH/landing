@@ -64,14 +64,17 @@
 .dropdown__menu a.header__content-title {
   font-weight: bold;
 }
-.dropdown__menu a.header__item {
+.header__link {
+  display: block;
+}
+.dropdown__menu a.header__link {
   padding-top: 0;
   padding-bottom: 0;
 }
-.header__item.active {
+.header__link.active {
   color: $red;
 }
-.header__item.bold {
+.header__link.bold {
   font-weight: bold;
 }
 
@@ -98,6 +101,7 @@
   .row {
     margin-right: 0;
     flex-wrap: nowrap;
+    justify-content: space-between;
     @include sm() {
       justify-content: center;
     }
@@ -165,15 +169,21 @@
     font-size: 24px;
     color: $red;
     font-weight: bold;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      max-width: 30px;
+      fill: $red;
+    }
   }
 }
 
 // mobile menu
-.header__mob-menu-content {
-  display: none;
+.header__menu-mobile {
   position: absolute;
   top: 46px;
-  left: 0;
+  left: -280px;
   background-color: $skyBlue;
   box-sizing: border-box;
   width: 73%;
@@ -182,6 +192,27 @@
   z-index: 500;
   overflow-y: auto;
   overflow-x: hidden;
+
+  @include xl() {
+    display: none;
+  }
+}
+
+.menu-mobile__wrapper {
+  padding: 16px;
+}
+
+.menu-mobile__block {
+  margin-bottom: 16px;
+
+  &.social {
+    .header__link {
+      margin-bottom: 4px;
+      img {
+        width: 25px;
+      }
+    }
+  }
 }
 
 // выпадающие меню
@@ -263,7 +294,7 @@
       display: flex;
       align-items: center;
       padding-left: 8px;
-      padding-right: 18px;
+      padding-right: 8px;
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
@@ -325,7 +356,8 @@
     justify-content: center;
     input {
       width: 100%;
-      max-width: 360px;
+      max-width: 400px;
+      height: 32px;
       border: 1px solid $red;
       border-radius: 0;
     }

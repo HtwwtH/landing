@@ -2,7 +2,10 @@
 $(function () {
   // click burger button
   $('#showMobileMenu').click(function () {
-    $(".header__mob-menu-content").animate({ width: 'toggle' }, 600);
+    if ($(".header__menu-mobile").css('left') == '0px')
+      $(".header__menu-mobile").animate({ left: '-280px' }, 600);
+    else
+      $(".header__menu-mobile").animate({ left: '0' }, 600);
   })
 
   // click search button on mobile

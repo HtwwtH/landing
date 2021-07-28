@@ -10,10 +10,6 @@ section.reviews {
 
 .reviews h2 {
   text-align: center;
-  // margin-bottom: 64px;
-  // @include xl() {
-  //   margin-bottom: 65px;
-  // }
 }
 
 .reviews {
@@ -70,6 +66,7 @@ section.reviews {
 
   .slick-list {
     padding-top: 55px;
+    margin-bottom: 60px;
     @include md() {
       padding-top: 50px;
     }

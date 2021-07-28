@@ -1,16 +1,18 @@
-@mixin font($font-family, $file-path, $weight: normal, $style: normal) {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@mixin font($font-family, $file-path, $weight, $style: normal) {
   @font-face {
     font-family: $font-family;
     font-weight: $weight;
     font-style: $style;
     font-display: swap;
-    src: url('#{$file-path}.ttf') format('ttf');
+    src: url('#{$file-path}.woff2') format('woff2'), url('#{$file-path}.ttf') format('ttf');
   }
 }
 
 
-  @include font('Inter', '../fonts/Inter/Inter-Light', 300);
-  @include font('Inter', '../fonts/Inter/Inter-Regular');
-  @include font('Inter', '../fonts/Inter/Inter-Medium', 500);
-  @include font('Inter', '../fonts/Inter/Inter-SemiBold', 600);
-  @include font('Inter', '../fonts/Inter/Inter-Bold', bold);
+  @include font('Inter, sans-serif', '/fonts/Inter/Inter-Light', 300);
+  @include font('Inter, sans-serif', '/fonts/Inter/Inter-Regular', normal);
+  @include font('Inter, sans-serif', '/fonts/Inter/Inter-Medium', 500);
+  @include font('Inter, sans-serif', '/fonts/Inter/Inter-SemiBold', 600);
+  @include font('Inter, sans-serif', '/fonts/Inter/Inter-Bold', bold);
