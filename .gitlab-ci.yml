@@ -1,0 +1,26 @@
+build:
+  image: node:14
+  only:
+    refs:
+      - master
+  stage: build
+  script:
+    - yarn install --progress=false
+    - yarn build
+  artifacts:
+    paths:
+      - dist
+
+deploy:
+  only:
+    refs:
+      - master
+  image: alpine
+  stage: deploy
+  script:
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$DEV_KEY" >> ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -zr --perms --chmod=u=xrw,go=xr ./dist/* madex@do.madex.pro:/var/www/ek-zip.madex.pro/public_html/
