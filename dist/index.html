@@ -247,11 +247,11 @@
       </section>
       <section class="reliability">
         <div class="container">
-          <h2 class="reliability__header">Надёжная молния</h2>
+          <h2 class="aos reliability__header" data-aos="fade-down" data-aos-once="true">Надёжная молния</h2>
         </div>
         <div class="container"> 
-          <ol class="scroller row">
-            <div class="reliability__item">
+          <ol class="scroller row reliability__wrapper">
+            <div class="reliability__item reliability__fade">
               <div class="reliability__item-left">
                 <div class="reliability__sticky">
                   <div class="text">
@@ -261,12 +261,10 @@
                 </div>
               </div>
               <div class="reliability__item-right scroller row"> 
-                <div class="reliability__fade">
-                  <div class="image"><img src="/img/reliability/Rectangle1.png" alt=""></div>
-                </div>
+                <div class="image"><img src="/img/reliability/Rectangle1.png" alt=""></div>
               </div>
             </div>
-            <div class="reliability__item">
+            <div class="reliability__item reliability__fade">
               <div class="reliability__item-left">
                 <div class="reliability__sticky">
                   <div class="text">
@@ -276,12 +274,10 @@
                 </div>
               </div>
               <div class="reliability__item-right scroller row"> 
-                <div class="reliability__fade">
-                  <div class="image"><img src="/img/reliability/Rectangle2.png" alt=""></div>
-                </div>
+                <div class="image"><img src="/img/reliability/Rectangle2.png" alt=""></div>
               </div>
             </div>
-            <div class="reliability__item">
+            <div class="reliability__item reliability__fade">
               <div class="reliability__item-left">
                 <div class="reliability__sticky">
                   <div class="text">
@@ -291,12 +287,10 @@
                 </div>
               </div>
               <div class="reliability__item-right scroller row"> 
-                <div class="reliability__fade">
-                  <div class="image"><img src="/img/reliability/Rectangle3.png" alt=""></div>
-                </div>
+                <div class="image"><img src="/img/reliability/Rectangle3.png" alt=""></div>
               </div>
             </div>
-            <div class="reliability__item">
+            <div class="reliability__item reliability__fade">
               <div class="reliability__item-left">
                 <div class="reliability__sticky">
                   <div class="text">
@@ -306,9 +300,7 @@
                 </div>
               </div>
               <div class="reliability__item-right scroller row"> 
-                <div class="reliability__fade">
-                  <div class="image"><img src="/img/reliability/Rectangle4.png" alt=""></div>
-                </div>
+                <div class="image"><img src="/img/reliability/Rectangle4.png" alt=""></div>
               </div>
             </div>
           </ol>
@@ -690,6 +682,10 @@
     </main>
     <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="/blocks/reliability/reliability.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/animateBlocks.js"></script>
     <script src="/blocks/format/format.js" type="text/javascript" charset="utf-8"></script>

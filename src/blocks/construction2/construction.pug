@@ -1,10 +1,11 @@
-//- вариант с волной картинкой
+//- вариант с волной видео
 section.construction
   .container
     h2(data-aos="fade-down", data-aos-once="true").aos  Конструкция, которой можно доверять
     .construction__items
       div(data-aos="fade-right", data-aos-once="true").construction__item.wave.col-xl-12.aos 
-        img(src="/img/construction/wave.png", alt="")
+        .construction__video
+          video(src="/img/construction/wave-video.mp4", type="video/mp4", autoplay="autoplay", loop="loop", muted="muted", preload="auto" )
         .text.text--note
           span.title В целости и сохранности
           .description Водонепроницаемый и прочный пластик защищает вещи от пыли, грязи и влаги

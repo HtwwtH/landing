@@ -8,7 +8,12 @@ block content
   include blocks/header
 
   include ../blocks/main/main
+  include ../blocks/main2/main
+  include ../blocks/main3/main
+
   include ../blocks/construction/construction
+  include ../blocks/construction2/construction
+
   include ../blocks/reliability/reliability
   include ../blocks/collections/collections
   include ../blocks/youtube/youtube
@@ -23,15 +28,21 @@ block content
 
 block scripts
   //- animations
+  //- reliability block
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js")
+  script(src='/blocks/reliability/reliability.js')
+  //- all blocks
   script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
   script(src='js/animateBlocks.js')
 
   //- format block with tabs
   script(src="/blocks/format/format.js" type="text/javascript" charset="utf-8")
-  //- scripts for catalog block
+  //- catalog block
   script(src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js", integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==", crossorigin="anonymous")
   script(src="/blocks/custom-select/custom-select.js" type="text/javascript" charset="utf-8")
   script(src="/blocks/featured-catalog/featured-catalog.js" type="text/javascript" charset="utf-8")
-  //- scripts for reviews block
+  //- reviews block
   script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==", crossorigin="anonymous", referrerpolicy="no-referrer")
   script(src="/blocks/reviews/reviews.js" type="text/javascript" charset="utf-8")

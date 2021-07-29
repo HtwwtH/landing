@@ -17,9 +17,13 @@ section.reliability {
 
 
 .reliability__sticky {
-  width: 100%;
-  position: sticky;
-  top: 125px;
+  @include xl() {
+    width: 100%;
+    // position: sticky;
+    position: absolute;
+    // top: 40vh;
+    top: 40%;
+  }
 }
 
 .reliability .scroller {
@@ -32,7 +36,6 @@ section.reliability {
       margin: 0;
       overflow-x: auto;
       @include xl() {
-        margin: 0 54px;
         overflow-x: unset;
       }
     }
@@ -124,8 +127,24 @@ ol.scroller {
         line-height: 150%;
       }
     }
-
-    
   }
- 
+ }
+
+@include xl() {
+  .reliability .scroller.row.reliability__wrapper {
+    margin: 0 54px;
+    display: flex;
+	  flex: 1;
+  }
+  .reliability__item {
+    height: 50vh;
+    // padding-top: 200px;
+  }
+  .reliability__item-right.scroller {
+    display: flex;
+    align-items: center;
+  }
 }
+
+
+
