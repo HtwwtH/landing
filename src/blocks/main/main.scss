@@ -1,6 +1,14 @@
 @import "../../scss/includes/variables";
 @import "../../scss/includes/helpers";
 
+// first block
+.section_first {
+  
+  @include xl() {
+    margin-top: 228px;
+  }
+}
+
 // .main-block--type default
 section.main-block {
   margin-bottom: 60px;

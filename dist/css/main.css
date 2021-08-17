@@ -765,7 +765,7 @@ body {
 #main {
   width: 100%;
   min-height: 100vh;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 a {
@@ -1744,7 +1744,8 @@ button {
 @media only screen and (min-width: 1200px) {
   .header {
     margin-top: 41px;
-    margin-bottom: 86px;
+    position: absolute;
+    width: 100%;
   }
 }
 .header a {
@@ -1823,6 +1824,11 @@ button {
   position: relative;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.header__main.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 199;
 }
 @media only screen and (min-width: 1200px) {
   .header__main {
