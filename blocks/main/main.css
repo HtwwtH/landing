@@ -1,3 +1,9 @@
+@media only screen and (min-width: 1200px) {
+  .section_first {
+    margin-top: 228px;
+  }
+}
+
 section.main-block {
   margin-bottom: 60px;
 }
