@@ -118,13 +118,13 @@ section.youtube {
 
 .convert {
   position: relative;
-  width: 100%;
-  max-width: 428px;
+  width: 288px;
   padding: 0 19px;
   margin: 0 auto;
   z-index: 2;
 
   @include xl() {
+    width: 100%;
     max-width: 800px;
   }
 }
@@ -134,11 +134,10 @@ section.youtube {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  left: 0;
-  padding: 5% 9% 6% 9.5%;
+  padding: 5% 15.8% 6% 3%;
 
   @include xl() {
-    padding: 38px 41px 36px 43px;
+    padding: 38px 61px 36px 24px;
   }
 }
 
@@ -156,20 +155,22 @@ section.youtube {
   fill: red;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 379px) {
+@media only screen and (min-width: 380px) and (max-width: 459px) {
+  .convert{
+    width: 354px;
+  }
+
   .convert__video {
-    padding: 5% 8.5% 6% 8.5%;
+    padding: 5% 13.5% 6% 3%;
   }
 }
 
-@media only screen and (min-width: 380px) and (max-width: 419px) {
-  .convert__video {
-    padding: 5% 8% 6% 8%;
+@media only screen and (min-width: 460px) and (max-width: 1200px) {
+  .convert{
+    width: 428px;
   }
-}
 
-@media only screen and (min-width: 420px) and (max-width: 1200px) {
   .convert__video {
-    padding: 5% 7.3% 5.8% 7.4%;
+    padding: 5% 11.7% 5.8% 3%;
   }
 }
