@@ -19,6 +19,8 @@ section.situation {
 @media only screen and (min-width: 1200px) {
   .situation__items {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
     height: 453px;
     justify-content: space-between;
   }
@@ -39,7 +41,8 @@ section.situation {
 }
 @media only screen and (min-width: 1200px) {
   .situation__item {
-    width: 260px;
+    width: 25%;
+    max-width: 260px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
