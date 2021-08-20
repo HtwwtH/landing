@@ -132,6 +132,7 @@
   .header__logo {
     height: 30px;
     max-width: 141px;
+    
     @include xl() {
       max-width: unset;
       height: 50px;
