@@ -84,6 +84,7 @@ section.construction {
     max-width: 511px;
   }
   .construction__item.wave .text .title {
+    white-space: nowrap;
     font-size: 36px;
     line-height: 28px;
   }
