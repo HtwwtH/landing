@@ -18,6 +18,8 @@ section.situation {
 .situation__items {
   @include xl() {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
     height: 453px;
     justify-content: space-between;
   }
@@ -38,7 +40,8 @@ section.situation {
   width: 220px;
 
   @include xl() {
-    width: 260px;
+    width: 25%;
+    max-width: 260px;
     height: fit-content;
   }
 

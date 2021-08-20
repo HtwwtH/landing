@@ -1,5 +1,37 @@
 "use strict";
 
+$(function () {
+  $('.tabs-list__link').click(function (e) {
+    e.preventDefault();
+    var tabActive = $(this).attr('href'),
+        activeListClass = 'tabs-list__link--active',
+        ListItemClass = 'tabs-list__link',
+        tabWrap = '.tabs';
+    $(this).addClass(activeListClass).parents('.tabs-list').find('.' + ListItemClass).not($(this)).removeClass(activeListClass);
+    $(this).parents(tabWrap).children('.tab').removeClass('tab--active');
+    $(tabActive).addClass('tab--active');
+  });
+});
+"use strict";
+
+$(document).ready(function () {
+  $('.reviews .slider').slick({
+    infinite: true,
+    arrows: false,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [{
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
+});
+"use strict";
+
 function formatColors(color) {
   if (!color.id) {
     return color.text;
@@ -78,20 +110,6 @@ $(document).ready(function () {
 });
 "use strict";
 
-$(function () {
-  $('.tabs-list__link').click(function (e) {
-    e.preventDefault();
-    var tabActive = $(this).attr('href'),
-        activeListClass = 'tabs-list__link--active',
-        ListItemClass = 'tabs-list__link',
-        tabWrap = '.tabs';
-    $(this).addClass(activeListClass).parents('.tabs-list').find('.' + ListItemClass).not($(this)).removeClass(activeListClass);
-    $(this).parents(tabWrap).children('.tab').removeClass('tab--active');
-    $(tabActive).addClass('tab--active');
-  });
-});
-"use strict";
-
 $(document).ready(function () {
   $('.featured-catalog__trigger').on('click', function () {
     $('body').addClass('modal-open');
@@ -151,22 +169,4 @@ function initAnimations() {
 
 $(document).ready(function () {
   initAnimations();
-});
-"use strict";
-
-$(document).ready(function () {
-  $('.reviews .slider').slick({
-    infinite: true,
-    arrows: false,
-    dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [{
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }]
-  });
 });

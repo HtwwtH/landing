@@ -352,7 +352,7 @@ section.construction {
 }
 .construction__item.wave .text {
   bottom: 0;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .construction__item.wave .text .title, .construction__item.wave .text .description {
   background: #D7E9F8;
@@ -497,7 +497,7 @@ section.construction {
 }
 .construction__item.wave .text {
   bottom: 0;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .construction__item.wave .text .title, .construction__item.wave .text .description {
   background: #D7E9F8;
@@ -1992,6 +1992,8 @@ section.situation {
 @media only screen and (min-width: 1200px) {
   .situation__items {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
     height: 453px;
     justify-content: space-between;
   }
@@ -2012,7 +2014,8 @@ section.situation {
 }
 @media only screen and (min-width: 1200px) {
   .situation__item {
-    width: 260px;
+    width: 25%;
+    max-width: 260px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
