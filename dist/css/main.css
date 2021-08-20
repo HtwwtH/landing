@@ -1834,7 +1834,7 @@ button {
   .header__main {
     padding-top: 0;
     padding-bottom: 0;
-    background: #fff;
+    background: transparent;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1878,6 +1878,15 @@ button {
     max-width: unset;
     height: 50px;
     padding-right: 5px;
+  }
+  .header__logo:after {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 .header__logo img {
