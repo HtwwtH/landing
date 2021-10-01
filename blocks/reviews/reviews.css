@@ -25,7 +25,7 @@ section.reviews {
   }
 }
 .reviews .slide:after {
-  content: url(/img/icons/quot.svg);
+  content: url(/landing/img/icons/quot.svg);
   position: absolute;
   top: -33px;
   right: 0;
@@ -50,7 +50,7 @@ section.reviews {
   width: 18px;
   height: 18px;
   display: inline-block;
-  background: url(/img/icons/star.svg) no-repeat center center/contain;
+  background: url(/landing/img/icons/star.svg) no-repeat center center/contain;
 }
 .reviews .stars li:not(:last-child) {
   margin-right: 5px;
